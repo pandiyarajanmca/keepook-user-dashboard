@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccessSidebarComponent } from './access-sidebar.component';
+import { SmartTemplateComponent } from './smart-template.component';
 
-describe('AccessSidebarComponent', () => {
-  let component: AccessSidebarComponent;
-  let fixture: ComponentFixture<AccessSidebarComponent>;
+describe('SmartTemplateComponent', () => {
+  let component: SmartTemplateComponent;
+  let fixture: ComponentFixture<SmartTemplateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AccessSidebarComponent ]
+      declarations: [ SmartTemplateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AccessSidebarComponent);
+    fixture = TestBed.createComponent(SmartTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

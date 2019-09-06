@@ -7,7 +7,7 @@ import { TechnicalSettingsModule } from './technical-settings/technical-settings
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
-import { AccessManagementModule } from './access-management/access-management.module';
+import { SmartTemplateModule } from './smart-template/smart-template.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { WorkflowManagementModule } from './workflow-management/workflow-management.module';
 import { ReportingComponent } from './reporting/reporting.component';
@@ -36,7 +36,7 @@ import { AccessService } from './_serives/access.service';
     AppRoutingModule,
     EntityManagementModule,
     TechnicalSettingsModule,
-    AccessManagementModule,
+    SmartTemplateModule,
     WorkflowManagementModule,
     FormsModule, 
     ReactiveFormsModule,

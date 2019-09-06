@@ -1,15 +1,15 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { FormGroup, Validators, FormBuilder  } from '@angular/forms';
-import { EntityService } from '../../../_serives/entity.service';
+import { EntityService } from '../../_serives/entity.service';
 
 
 @Component({
-  selector: 'app-edit-roles',
-  templateUrl: './edit-roles.component.html',
-  styleUrls: ['./edit-roles.component.css']
+  selector: 'app-edit-users',
+  templateUrl: './edit-users.component.html',
+  styleUrls: ['./edit-users.component.css']
 })
-export class EditRolesComponent implements OnInit {
-  editRolesForm: FormGroup;
+export class EditUsersComponent implements OnInit {
+  editUsersForm: FormGroup;
   submitted: boolean = false;
   
 
@@ -18,8 +18,8 @@ export class EditRolesComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private entityService: EntityService) { }
   ngOnInit() {
-    this.editRolesForm = this.formBuilder.group({
-      rolesName: ['', Validators.required],
+    this.editUsersForm = this.formBuilder.group({
+      usersName: ['', Validators.required],
       website: ['', Validators.required],
       logo: ['', Validators.required],
       address: ['', Validators.required],
@@ -42,8 +42,8 @@ export class EditRolesComponent implements OnInit {
     let tempRecord= this.editRecords;
 
     console.log(tempRecord)
-    this.editRolesForm.setValue({
-      rolesName: tempRecord['rolesName'],
+    this.editUsersForm.setValue({
+      usersName: tempRecord['usersName'],
       website: tempRecord ['website'],
       logo: tempRecord['logo'],
       address: tempRecord['address'],
@@ -56,21 +56,21 @@ export class EditRolesComponent implements OnInit {
     });
   }
 
-  get fConrols() { return this.editRolesForm.controls; }
+  get fConrols() { return this.editUsersForm.controls; }
   
-  editRolesSubmit() {
+  editUsersSubmit() {
     this.submitted = true;
     console.log('testr');
     // stop here if form is invalid
 
-    console.log(this.editRolesForm.value);
+    console.log(this.editUsersForm.value);
     
-    if (this.editRolesForm.invalid) {
+    if (this.editUsersForm.invalid) {
       return;
     }
     else {
       // let id = this.editRecords.id;
-      // this.entityService.editRoles(this.editRolesForm.value, id, null).subscribe(res => {
+      // this.entityService.editUsers(this.editUsersForm.value, id, null).subscribe(res => {
       //   console.log(res);
       // }, err => {
       //   console.log(err);

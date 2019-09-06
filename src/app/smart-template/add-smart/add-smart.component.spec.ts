@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewRolesComponent } from './view-roles.component';
+import { AssignRolesComponent } from './add-smart.component';
 
-describe('ViewRolesComponent', () => {
-  let component: ViewRolesComponent;
-  let fixture: ComponentFixture<ViewRolesComponent>;
+describe('AssignRolesComponent', () => {
+  let component: AssignRolesComponent;
+  let fixture: ComponentFixture<AssignRolesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewRolesComponent ]
+      declarations: [ AssignRolesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewRolesComponent);
+    fixture = TestBed.createComponent(AssignRolesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

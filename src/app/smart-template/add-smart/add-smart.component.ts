@@ -4,11 +4,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AccessService } from 'src/app/_serives/access.service';
 
 @Component({
-  selector: 'app-assign-roles',
-  templateUrl: './assign-roles.component.html',
-  styleUrls: ['./assign-roles.component.css']
+  selector: 'app-add-smart',
+  templateUrl: './add-smart.component.html',
+  styleUrls: ['./add-smart.component.css']
 })
-export class AssignRolesComponent implements OnInit {
+export class AddSmartComponent implements OnInit {
   assignRoleForm: FormGroup;
   submitted: boolean = false;
   httpService: any;
@@ -25,15 +25,15 @@ export class AssignRolesComponent implements OnInit {
       createRole: ['', Validators.required]
 
     });
-    this.getAllRoles();
+    //this.getAllRoles();
   }
 
-  getAllRoles() {
-    this.accessService.getAllRoles().subscribe(res => {
-      console.log(res);
-      this.allRoles = res['data'].company;
-    })
-  }
+  // getAllRoles() {
+  //   this.accessService.getAllRoles().subscribe(res => {
+  //     console.log(res);
+  //     this.allRoles = res['data'].company;
+  //   })
+  // }
 
   assignRoleSubmit() {
     this.submitted = true;

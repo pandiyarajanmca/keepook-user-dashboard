@@ -15,11 +15,11 @@ const routes: Routes = [
     loadChildren: '../app/entity-management/entity-management.module#EntityManagementModule'
   },
   {
-    path: 'access-management',
-    loadChildren: '../app/access-management/access-management.module#AccessManagementModule'
+    path: 'smart-template',
+    loadChildren: '../app/smart-template/smart-template.module#SmartTemplateModule'
   },
   {
-    path: 'technical-settings',  
+    path: 'technical-settings',
     loadChildren: '../app/technical-settings/technical-settings.module#TechnicalSettingsModule'
   },
   {
