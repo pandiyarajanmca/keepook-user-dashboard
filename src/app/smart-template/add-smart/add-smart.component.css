@@ -1,0 +1,140 @@
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+  }
+  .multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+    background-color: rgb(97, 38, 132);
+  }
+  
+  .multi-steps {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .multi-steps > li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: rgba(255,255,255);
+  }
+  .multi-steps > li:before {
+    content: '\f00c';
+    content: '\2713;';
+    content: '\10003';
+    content: '\10004';
+    content: '\2713';
+    display: block;
+    margin: 0 auto 4px;
+    background-color: rgb(97, 38, 132);
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(97, 38, 132);
+    border-radius: 50%;
+  }
+  .multi-steps > li:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: rgb(97, 38, 132);
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    z-index: -1;
+  }
+  .multi-steps > li:last-child:after {
+    display: none;
+  }
+  .multi-steps > li.is-active:before {
+    background-color: rgb(97, 38, 132);
+    border-color: rgb(97, 38, 132);
+  }
+  .multi-steps > li.is-active ~ li {
+    color: #808080;
+    
+  }
+  .multi-steps > li.is-active ~ li:before {
+    background-color: #ededed;
+    border-color: #ededed;
+  }
+  .bordered {
+    
+    padding: 20px;
+    margin-top: -18px;
+    border: 1px solid rgb(75, 75, 74);
+    border-radius: 1px;
+  }
+  
+  .borderedpage {
+    
+    padding: 20px;
+    /* margin-top: -17px; */
+    border: 1px solid rgb(116, 112, 112);
+    border-radius: 1px;
+    padding-top: 20px;
+  }
+  
+ 
+  
+  
+  .padding{
+    padding-top: 20px;
+  }
+  .button {
+     background-color: #0099cc;;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    margin: 2px 2px;
+  }
+  .button5 {border-radius: 100%;}
+ 
+
+ 
+    
+    html, body {
+      height:100%;
+    }
+    body {
+      background:#e2e2e2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .progress-bar{
+      color: rgb(230, 233, 231);
+      background-color: #0099cc
+      ;
+
+    }
+.bgpurple{
+  background-color: rgb(97, 38, 132);
+  text-align: center;
+  padding: 5px;
+  color: #ffffff
+}
+.tablemartop{
+  margin-top:-15px
+}
+hr{
+  border-width: 2px;
+}
+.margin{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+    
+    
+  

@@ -26,6 +26,7 @@ export class AddSmartComponent implements OnInit {
 
     });
     //this.getAllRoles();
+    
   }
 
   // getAllRoles() {
@@ -60,5 +61,6 @@ export class AddSmartComponent implements OnInit {
   goBack() {
     this._location.back();
   }
+  
 
 }
