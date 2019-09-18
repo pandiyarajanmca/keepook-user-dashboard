@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EditUsersComponent } from './edit-users.component';
+import { ViewSmartComponent } from './view-smart.component';
 
-describe('EditUsersComponent', () => {
-  let component: EditUsersComponent;
-  let fixture: ComponentFixture<EditUsersComponent>;
+describe('ViewSmartComponent', () => {
+  let component: ViewSmartComponent;
+  let fixture: ComponentFixture<ViewSmartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EditUsersComponent ]
+      declarations: [ ViewSmartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EditUsersComponent);
+    fixture = TestBed.createComponent(ViewSmartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

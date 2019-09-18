@@ -3,11 +3,11 @@ import { EntityService } from 'src/app/_serives/entity.service';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-view-users',
-  templateUrl: './view-users.component.html',
-  styleUrls: ['./view-users.component.css']
+  selector: 'app-view-smart',
+  templateUrl: './view-smart.component.html',
+  styleUrls: ['./view-smart.component.css']
 })
-export class ViewUsersComponent implements OnInit {
+export class ViewSmartComponent implements OnInit {
   usersList: any;
   editRecord: any;
   constructor(
@@ -17,6 +17,7 @@ export class ViewUsersComponent implements OnInit {
 
   ngOnInit() {
     this.getusers();
+    
   }
   goBack() {
     this._location.back();

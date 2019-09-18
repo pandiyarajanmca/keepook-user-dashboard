@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AssignRolesComponent } from './add-smart.component';
+import { AddSmartComponent } from './add-smart.component';
 
-describe('AssignRolesComponent', () => {
-  let component: AssignRolesComponent;
-  let fixture: ComponentFixture<AssignRolesComponent>;
+describe('AddSmartComponent', () => {
+  let component: AddSmartComponent;
+  let fixture: ComponentFixture<AddSmartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AssignRolesComponent ]
+      declarations: [ AddSmartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AssignRolesComponent);
+    fixture = TestBed.createComponent(AddSmartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

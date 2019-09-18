@@ -4,8 +4,8 @@ import { AccessRoutingModule } from './smart-template-routing.module';
 import { SmartTemplateComponent } from './smart-template.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SmartSidebarComponent } from './smart-sidebar/smart-sidebar.component';
-import { ViewUsersComponent } from './view-users/view-users.component';
-import { EditUsersComponent } from './edit-users/edit-users.component';
+import { ViewSmartComponent } from './view-smart/view-smart.component';
+import { EditSmartComponent } from './edit-smart/edit-smart.component';
 
 import { AccessService } from '../_serives/access.service';
 import { AddSmartComponent} from './add-smart/add-smart.component'
@@ -18,8 +18,8 @@ import { AddSmartComponent} from './add-smart/add-smart.component'
   declarations: [
     SmartTemplateComponent,
     SmartSidebarComponent,
-    EditUsersComponent,
-    ViewUsersComponent,
+    EditSmartComponent,
+    ViewSmartComponent,
     
     AddSmartComponent
   ],

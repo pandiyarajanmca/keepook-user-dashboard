@@ -4,11 +4,11 @@ import { EntityService } from '../../_serives/entity.service';
 
 
 @Component({
-  selector: 'app-edit-users',
-  templateUrl: './edit-users.component.html',
-  styleUrls: ['./edit-users.component.css']
+  selector: 'app-edit-smart',
+  templateUrl: './edit-smart.component.html',
+  styleUrls: ['./edit-smart.component.css']
 })
-export class EditUsersComponent implements OnInit {
+export class EditSmartComponent implements OnInit {
   editUsersForm: FormGroup;
   submitted: boolean = false;
   

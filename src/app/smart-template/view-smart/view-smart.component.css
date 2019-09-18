@@ -1,0 +1,11 @@
+.search-box-container input {
+    padding: 5px 20px 5px 5px;
+   
+  }
+  
+  .search-box-container:after {
+      content: "\f002";
+      font-family: FontAwesome;
+      margin-left: -25px;
+      margin-right: 25px;
+  }

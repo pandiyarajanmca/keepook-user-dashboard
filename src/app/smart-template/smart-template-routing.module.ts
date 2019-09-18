@@ -4,7 +4,7 @@ import { SmartTemplateComponent } from './smart-template.component';
 import {AddSmartComponent} from './add-smart/add-smart.component'
 
 
-import { ViewUsersComponent } from './view-users/view-users.component';
+import { ViewSmartComponent } from './view-smart/view-smart.component';
 
 
 
@@ -12,8 +12,8 @@ const routes: Routes = [
   { path: '', component: SmartTemplateComponent },
   {path:'add-smart', component: AddSmartComponent},
   
-  
-  { path: 'edit-view-users', component: ViewUsersComponent },
+  {path:'edit-smart', component: AddSmartComponent},
+  { path: 'view-smart', component: ViewSmartComponent },
   
 ];
 
