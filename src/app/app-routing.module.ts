@@ -11,8 +11,8 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'entity-management',
-    loadChildren: '../app/entity-management/entity-management.module#EntityManagementModule'
+    path: 'template-management',
+    loadChildren: '../app/template-management/template-management.module#TemplateManagementModule'
   },
   {
     path: 'smart-template',

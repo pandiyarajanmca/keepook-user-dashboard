@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CompanyComponent } from './company/company.component';
+import { TemplateComponent } from './template/template.component';
 import { UserGroupComponent } from './user-group/user-group.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { DepartmentComponent } from './department/department.component';
-import { EntityRoutingModule } from './entity-routing.module';
+import { TemplateManagementRoutingModule } from './template-management-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { EntityManagementComponent } from './entity-management.component';
+import { TemplateManagementComponent } from './template-management.component';
 import { EntitySidebarComponent } from './entity-sidebar/entity-sidebar.component';
-import { EditCompanyComponent } from './company/edit-company/edit-company.component';
-import { ViewCompanyComponent } from './company/view-company/view-company.component';
+import { EditTemplateComponent } from './template/edit-template/edit-template.component';
+import { ViewTemplateComponent } from './template/view-template/view-template.component';
 import { EntityService } from '../_serives/entity.service';
 import { AngularFileUploaderModule } from "angular-file-uploader";
 import { CommonModulesModule } from '../common-module/common-module';
@@ -25,14 +25,14 @@ import { EditUserGroupComponent } from './user-group/edit-user-group/edit-user-g
 
 @NgModule({
   declarations: [
-    CompanyComponent,
+    TemplateComponent,
+    TemplateManagementComponent,
+    EditTemplateComponent,
+    ViewTemplateComponent,
     UserGroupComponent,
     OrganizationComponent,
     DepartmentComponent,
-    EntityManagementComponent,
     EntitySidebarComponent,
-    EditCompanyComponent,
-    ViewCompanyComponent,
     EditDepartmentComponent,
     ViewDepartmentComponent,
     EditOrganizationComponent,
@@ -44,7 +44,7 @@ import { EditUserGroupComponent } from './user-group/edit-user-group/edit-user-g
   imports: [
     CommonModule,    
     CommonModulesModule,
-    EntityRoutingModule,
+    TemplateManagementRoutingModule,
     FormsModule, 
     ReactiveFormsModule,
     AngularFileUploaderModule, 
@@ -53,7 +53,7 @@ import { EditUserGroupComponent } from './user-group/edit-user-group/edit-user-g
     EntityService
   ]
 })
-export class EntityManagementModule { }
+export class TemplateManagementModule { }
 
 
 

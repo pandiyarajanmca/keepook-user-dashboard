@@ -8,11 +8,11 @@ import { AngularFileUploaderComponent } from "angular-file-uploader";
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-company',
-  templateUrl: './company.component.html',
-  styleUrls: ['./company.component.css']
+  selector: 'app-template',
+  templateUrl: './template.component.html',
+  styleUrls: ['./template.component.css']
 })
-export class CompanyComponent implements OnInit {
+export class TemplateComponent implements OnInit {
 
   createCompanyForm: FormGroup;
   submitted: boolean = false;

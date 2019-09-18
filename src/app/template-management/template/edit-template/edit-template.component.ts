@@ -4,17 +4,17 @@ import { EntityService } from '../../../_serives/entity.service';
 
 
 @Component({
-  selector: 'app-edit-company',
-  templateUrl: './edit-company.component.html',
-  styleUrls: ['./edit-company.component.css']
+  selector: 'app-edit-template',
+  templateUrl: './edit-template.component.html',
+  styleUrls: ['./edit-template.component.css']
 })
-export class EditCompanyComponent implements OnInit {
+export class EditTemplateComponent implements OnInit {
   editCompanyForm: FormGroup;
   submitted: boolean = false;
   
 
-  @Input() editRecords: any;
-  @Output() valueChange = new EventEmitter();
+   @Input() editRecords: any;
+   @Output() valueChange = new EventEmitter();
 
   constructor(private formBuilder: FormBuilder, private entityService: EntityService) { }
   ngOnInit() {

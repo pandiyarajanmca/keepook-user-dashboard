@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { EntityManagementModule } from './entity-management/entity-management.module';
+import { TemplateManagementModule } from './template-management/template-management.module';
 import { TechnicalSettingsModule } from './technical-settings/technical-settings.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -34,7 +34,7 @@ import { AccessService } from './_serives/access.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    EntityManagementModule,
+    TemplateManagementModule,
     TechnicalSettingsModule,
     SmartTemplateModule,
     WorkflowManagementModule,

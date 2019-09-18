@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EntityManagementComponent } from './entity-management.component';
+import { EditTemplateComponent } from './edit-template.component';
 
-describe('EntityManagementComponent', () => {
-  let component: EntityManagementComponent;
-  let fixture: ComponentFixture<EntityManagementComponent>;
+describe('EditTemplateComponent', () => {
+  let component: EditTemplateComponent;
+  let fixture: ComponentFixture<EditTemplateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EntityManagementComponent ]
+      declarations: [ EditTemplateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EntityManagementComponent);
+    fixture = TestBed.createComponent(EditTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
