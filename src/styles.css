@@ -379,10 +379,12 @@ input {
 
 .recent-favorite .recent-btn {
   float: left;
+  background: #0099cc;
 }
 
 .recent-favorite .favorite-btn {
   float: right;
+  background: #000;
 }
 
 footer.footer {

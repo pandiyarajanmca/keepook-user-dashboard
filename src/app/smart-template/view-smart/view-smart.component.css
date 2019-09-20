@@ -6,6 +6,16 @@
   .search-box-container:after {
       content: "\f002";
       font-family: FontAwesome;
-      margin-left: -25px;
-      margin-right: 25px;
+      /* margin-left: -25px;
+      margin-right: 25px; */
   }
+  table.table thead th{
+      font-size: 15px;
+  }
+  .search-box-container:after {
+    content: "\f002";
+    font-family: FontAwesome;
+ position: absolute;
+ right: -40px;
+ top: 7px;
+}

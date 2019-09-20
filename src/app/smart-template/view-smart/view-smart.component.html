@@ -36,11 +36,11 @@
                             <div class="data_inner row-div">
                                 <div class="table-form col-12"
                                     style="border: 1px black solid; border-bottom: 2px #663399 solid; padding: 10px;">
-                                    <div class="row">
+                                    <div class="row" style="display:none;">
                                         <div class="col-sm-3">
                                             <div class="search-box-container">
                                                 <span style="padding-left:1px;">Search:</span>
-                                                <input type="text" placeholder="type to filter" />
+                                                <input type="text" placeholder="Type to filter" />
                                             </div>
                                         </div>
                                         <div class="col-sm-7 text-center">
@@ -154,6 +154,137 @@
                                         </div>
                                     </div>
 
+
+                                    <!-- new table top -->
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                                <div class="row">
+                                                        <div class="col-sm-3">
+                                                                <label for="Student" style="    padding-top: 6px;">Search:</label>
+                                                    </div>
+                                                    <div class="col-sm-9 search-box-container search-box-container-new">
+                                                            <input type="text" placeholder="Type to filter" />
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <div class=" module-col">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#myModal" style="padding-top: 3px;padding-bottom: 3px;"><i class="fa fa-filter"
+                                                        style="margin-right: 5px;">Advance Filter</i></button>
+                                                <!-- Popup Modal -->
+                                                <div class="modal fade" id="myModal">
+                                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <!-- Modal Header -->
+                                                            <div class="modal-header">
+                                                                <h5><i class="fa fa-filter"
+                                                                        style="margin-right: 5px;"></i>Advance Filter
+                                                                </h5>
+                                                                <button type="button" class="close"
+                                                                    data-dismiss="modal">&times;</button>
+                                                            </div>
+
+                                                            <!-- Modal body -->
+                                                            <div class="modal-body">
+
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <label>Type</label>
+                                                                        <select class="form-control">
+                                                                            <option>Small select</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="exampleFormControlInput1">Published
+                                                                            Template</label>
+                                                                        <input type="email" class="form-control"
+                                                                            id="exampleFormControlInput1"
+                                                                            placeholder="search">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <label>Smart Template</label>
+                                                                        <select class="form-control">
+                                                                            <option>Small select</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label for="date-picker-example">Try
+                                                                            me...</label>
+                                                                        <input placeholder="Selected date" type="text"
+                                                                            id="date-picker-example"
+                                                                            class="form-control datepicker">
+
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <label>Created By</label>
+                                                                        <select class="form-control">
+                                                                            <option>Small select</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <label>Status</label>
+                                                                        <select class="form-control">
+                                                                            <option>Small select</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <div class="tfooter_btn_col p-3 ">
+                                                                    <div class="row padding">
+                                                                        <div class="col">
+                                                                            <button type="button"
+                                                                                class="btn btn-cancel"><i
+                                                                                    class="fa fa-close"
+                                                                                    style="float:left"></i>
+                                                                                CANCEL</button>
+                                                                        </div>
+
+                                                                        <div class="col">
+                                                                            <button type="submit"
+                                                                                class="btn btn-preview"
+                                                                                style="float: right"><i
+                                                                                    class="fa fa-check"></i>
+                                                                                APPLY</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End popup modal -->
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-5">
+                                                <div class="row">
+                                                        <div class="col-sm-9" style="text-align:right;">
+                                                                <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
+                                                    </div>
+                                                    <div class="col-sm-2"  style="    width: 50%;
+                                                    position: relative;
+                                                    top: 5px;padding:0;">
+                                                            <select name="" style="width: 75%;">
+                                                                    <option value="">All</option>
+                                                                    <option value="">10</option>
+                                                                </select>
+                                                        </div>
+                                                    </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <div class="table-resposive" style="padding-bottom:8px;">
                                     <table class="w-100 table table-bordered">
@@ -181,7 +312,7 @@
                                                 <td>sample text</td>
                                                 <td>sample text</td>
                                                 <td style="background-color: green;color: #fff">published</td>
-                                                <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
                                             </tr>
                                             <tr class="table-bordered">
                                                 <td>MUD</td>
@@ -190,7 +321,7 @@
                                                 <td>sample text</td>
                                                 <td>sample text</td>
                                                 <td style="background-color: red;color: #fff">Delegated</td>
-                                                <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
                                             </tr>
                                             <tr class="table-bordered">
                                                 <td>IJ</td>
@@ -199,7 +330,7 @@
                                                 <td>sample text</td>
                                                 <td>sample text</td>
                                                 <td style="background-color: red;color: #fff">Delegated</td>
-                                                <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
                                             </tr>
 
                                             <tr class="table-bordered">
@@ -209,7 +340,7 @@
                                                 <td>sample text</td>
                                                 <td>sample text</td>
                                                 <td style="background-color: red;color: #fff">Delegated</td>
-                                                <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>IST</td>
@@ -218,7 +349,7 @@
                                                 <td>sample text</td>
                                                 <td>sample text</td>
                                                 <td style="background-color: black;color: #fff">Delegated</td>
-                                                <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
                                             </tr>
 
                                             <!-- <tr>
