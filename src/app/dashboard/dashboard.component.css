@@ -33,4 +33,20 @@
     .toplist .toplist3{
         width:38%;
         } */
-        
+        .morereport-btn{
+            position: relative;
+            top: -9px;
+            font-weight: normal;
+        }
+        .morereport-btn img{
+  max-width: 22px;
+position: relative;
+top: -2px;
+        }
+        .seemore-link {
+            margin-bottom: -6px;
+            
+        }
+        .smartcontract-li  a:before{
+background: #79a341;
+        }
