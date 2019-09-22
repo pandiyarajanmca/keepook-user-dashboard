@@ -46,7 +46,7 @@
                                         <li class="is-active">
                                             <a data-toggle="tab" href="#home">
                                                 <span>
-                                                    Name It
+                                                  Select a Published Template
                                                 </span>
                                             </a>
                                         </li>
@@ -73,8 +73,8 @@
 
                                 <div class="col-lg-1">
                                     <span class="oi oi-info"></span>
-                                    <div class="progress " style="height: 30px;width: 300px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 15%; "
+                                    <div class="progress " style="height: 30px;width: 300px;    border-radius: 17px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 13%; "
                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
                                     </div>
                                 </div>
@@ -85,9 +85,9 @@
                                 <div class="tab-content">
                                     <div id="home" class="tab-pane fade in active mg show">
 
-                                        <h3>STEP1 -NAME YOUR SMART TEMPLATE</h3>
+                                        <h3>STEP1 - NAME YOUR SMART TEMPLATE</h3>
 
-                                        <div class="row">
+                                        <div class="row " style="padding-bottom: 7%;">
                                             <div class="col-12 col-lg-8 col-sm-12 ">
                                                 <h3 class="bgpurple">TEMPLATE</h3>
                                                 <table class="table tablemartop">
@@ -98,7 +98,7 @@
                                                             <td>Created By</td>
                                                             <td>Description</td>
                                                         </tr>
-                                                        <tr>
+                                                        <tr class="secondtd">
                                                             <td>Agency_MUR_35</td>
                                                             <td>Home Loan</td>
                                                             <td>Marie White</td>
@@ -132,14 +132,14 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4">
-                                                <h3 class="bgpurple">SMART TEMPLATE</h3>
-                                                <form class="container borderedpage">
+                                                <h3 class="bgpurple bgpurplesmart">SMART TEMPLATE</h3>
+                                                <form class="container borderedpage borderedpage1">
                                                     <div>
-                                                        <label for="validationDefault01">First name</label>
+                                                        <label for="validationDefault01" style="margin-top: 0;">First name</label>
                                                         <input type="text" class="form-control" id="validationDefault01"
                                                             placeholder="First name" required>
                                                     </div>
-                                                    <div>
+                                                    <div class="form-group">
                                                         <label for="validationDefault01">Version</label>
                                                         <input type="text" class="form-control" id="validationDefault01"
                                                             placeholder="4.0.0" required>
@@ -147,7 +147,8 @@
                                                     <div class="form-group">
                                                         <label for="exampleFormControlTextarea2">Type</label>
                                                         <select class="custom-select" required>
-                                                            <option value="">Open this select menu</option>
+                                                            <option value="">Home Loan</option>
+                                                            <!-- <option value="">Open this select menu</option> -->
 
                                                         </select>
                                                         <div class="invalid-feedback">Example invalid custom select
@@ -167,34 +168,52 @@
                                         </div>
 
                                         <div class="tfooter_btn_col p-3 ">
-                                            <div class="row padding">
-                                                <div class="col-4">
+                                            <div class="row padding btnlist btnlist1">
+                                                    <ul>
+                                                            <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CANCEL</button></li>
+                                                            <li> <button type="button" class="btn btn-save"><i class="fa fa-check"></i> SAVE </button></li> 
+                                                             <li> <button type="button" class="btn btn-save"><i class="fa fa-arrow-right"></i> NEXT</button></li>
+                                                        </ul>
+
+                                                <!-- <div class="col-4">
                                                     <button type="button" class="btn btn-cancel"><i
                                                             class="fa fa-close"></i>
                                                         Cancel</button>
                                                 </div>
-                                                <div class="col-4">
+                                               
+
+                                                <div class="col-4" style="text-align:center;">
+                                                        <button class="btn btn-next"><i class="fa fa-check" href="#menu1"></i>
+                                                        Save</button>
+                                                    </div>
+                                                    <div class="col-4">
+                                                            <button type="submit" class="btn btn-save"><i
+                                                                    class="fa fa-arrow-right"></i>
+                                                                Next</button>
+                                                        </div> -->
+
+                                                <!-- <div class="col-4">
                                                     <button class="btn btn-next"><i class="fa fa-arrow-right"
                                                             href="#menu1"></i>
                                                         Next</button>
                                                 </div>
                                                 <div class="col-4">
-                                                    <button type="submit" class="btn btn-save"><i
-                                                            class="fa fa-check"></i>
-                                                        Save</button>
-                                                </div>
+                                                        <button type="submit" class="btn btn-save"><i
+                                                                class="fa fa-check"></i>
+                                                            Save</button>
+                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div id="menu1" class="tab-pane fade">
 
                                         <div>
-                                            <h3>STEP2 -SMART CLAUSE</h3>
+                                            <h3>STEP 2 -SMART CLAUSE</h3>
                                             <P>Select Your Clause by Highlighting The Text</P>
                                         </div>
-                                        <div class="row">
+                                        <div class="row" style="padding-bottom: 7%;">
                                             <div class="col-12 col-lg-8 col-sm-12 ">
-
+ 
                                                 <div class="borderedpage">
                                                     <p>Here is a large collection of Moral Stories. From all regions of
                                                         the
@@ -226,29 +245,31 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-4 col-sm-12 ">
-                                                <table class="table">
+                                                <!-- <table class="table">
                                                     <thead>
-                                                        <th>SMART TEMPLATE</th>
+                                                        <th>SMART CLAUSE</th>
                                                     </thead>
                                                     <tbody>
 
                                                     </tbody>
-                                                </table>
-                                                <form class="container borderedpage">
+                                                </table> -->
 
-                                                    <div>
-                                                        <label for="validationDefault01">First name</label>
+                                                <h3  class="bgpurple bgpurplesmart" style="    margin-bottom: 6px;">SMART CLAUSE</h3>
+                                                <form class="container borderedpage borderedpage1 borderedpage2">
+
+                                                    <div class="form-group" style="margin-top: 0;">
+                                                        <label for="validationDefault01" >Smart Clause  Name</label>
                                                         <input type="text" class="form-control" id="validationDefault01"
-                                                            placeholder="First name" required>
+                                                            placeholder="Name your smart template" required>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="exampleFormControlTextarea2">Description</label>
+                                                        <label for="exampleFormControlTextarea2">Short Description</label>
                                                         <textarea class="form-control rounded-0"
                                                             id="exampleFormControlTextarea2" rows="2"></textarea>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="exampleFormControlTextarea2">Description</label>
+                                                        <label for="exampleFormControlTextarea2">Non-Legal Description</label>
                                                         <textarea class="form-control rounded-0"
                                                             id="exampleFormControlTextarea2" rows="3"></textarea>
                                                     </div>
@@ -262,13 +283,41 @@
                                         </div>
 
                                         <div class="tfooter_btn_col p-3 ">
-                                            <div class="row">
-                                                <div class="col-3">
+                                            <div class="row padding btnlist btnlist2">
+                                                    <ul>
+                                                            <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CANCEL</button></li>
+                                                            <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> skip</button></li>
+                                                            <li> <button type="button" class="btn btn-save" ><i class="fa fa-check"></i> save </button></li>
+                                                            <li> <button type="button" class="btn btn-save"><i class="fa fa-close"></i> PREVIEW</button></li> 
+                                                             <li> <button type="button" class="btn btn-save"><i class="fa fa-arrow-right"></i> NEXT</button></li>
+                                                        </ul>
+                                                <!-- <div class="col-3">
                                                     <button type="button" class="btn btn-cancel"><i
                                                             class="fa fa-close"></i>
                                                         CANCEL</button>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-2">
+                                                        <button type="button" class="btn btn-cancel"><i
+                                                                class="fa fa-close"></i>
+                                                            SKIP</button>
+                                                    </div>
+
+                                                    <div class="col-2" style="text-align:center;">
+                                                            <button class="btn btn-next"><i class="fa fa-check" href="#menu1"></i>
+                                                            Save</button>
+                                                        </div>
+                                                        <div class="col-3">
+                                                                <button type="submit" class="btn btn-preview"><i
+                                                                        class="fa fa-check"></i>
+                                                                    PREVIEW</button>
+                                                            </div>
+                                                        <div class="col-2">
+                                                                <button type="submit" class="btn btn-save"><i
+                                                                        class="fa fa-arrow-right"></i>
+                                                                    Next</button>
+                                                            </div> -->
+
+                                                <!-- <div class="col-3">
                                                     <button type="submit" class="btn btn-next"><i
                                                             class="fa fa-arrow-right"></i>
                                                         NEXT</button>
@@ -282,17 +331,17 @@
                                                     <button type="submit" class="btn btn-preview"><i
                                                             class="fa fa-check"></i>
                                                         PREVIEW</button>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
 
                                     </div>
                                     <div id="menu2" class="tab-pane fade ">
                                         <div class="row1">
-                                            <h3>SMART FIELDS</h3>
+                                            <h3 style="margin-bottom: 6px;">SMART FIELDS</h3>
                                             <P>Select Your Fields by Highlighting The Text</P>
                                         </div>
-                                        <div class="borderedpage ">
+                                        <div class="borderedpage " style="margin-bottom: 7%;">
                                             <p>Here is a large collection of Moral Stories. From all regions of
                                                 the
                                                 world, this collection has been made to represent the true
@@ -321,7 +370,7 @@
                                                 aspects of our lives.
                                             </p>
                                         </div>
-                                        <div class="margin">
+                                        <div class="margin" STYLE="margin-bottom:25px;">
                                             <button type="button" class="btn btn-primary" data-toggle="modal"
                                                 data-target="#exampleModalCenter">Look Up Smart
                                                 Field<i class="fa fa-clone" style="padding-left: 5px;"></i></button>
@@ -331,9 +380,9 @@
                                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog modal-xl" role="document">
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
+                                                    <div class="modal-header" style="    background: #f6f6f6;">
                                                         <h5 class="modal-title" id="exampleModalLongTitle">LOOK UP
-                                                            SMART FIELD(SELECT ONE OPTION)</h5>
+                                                            SMART FIELD (SELECT ONE OPTION)</h5>
                                                         <button type="button" class="close" data-dismiss="modal"
                                                             aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
@@ -415,9 +464,16 @@
 
                                                         </tbody>
                                                     </table>
-                                                    <div class="tfooter_btn_col p-3 ">
-                                                        <div class="row">
-                                                            <div class="col-4">
+                                                    <div class="tfooter_btn_col p-3 " style="border-top:none;">
+                                                        <div class="row btnlist btnlist3">
+                                                                <ul>
+                                                                        <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CANCEL</button></li>
+                                                                        <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> NONE OF THESE</button></li>
+                                                                        <li> <button type="button" class="btn btn-save" ><i class="fa fa-check"></i> SELECT </button></li>
+                                                                    </ul>
+
+
+                                                            <!-- <div class="col-4">
                                                                 <button type="button" class="btn btn-cancel"><i
                                                                         class="fa fa-close"></i>
                                                                     Cancel</button>
@@ -431,7 +487,7 @@
                                                                 <button type="submit" class="btn btn-save"><i
                                                                         class="fa fa-check"></i>
                                                                     Select</button>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -473,27 +529,20 @@
                                             </tbody>
                                         </table>
                                         <div class="tfooter_btn_col p-3 ">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <button type="button" class="btn btn-cancel"><i
-                                                            class="fa fa-close"></i>
-                                                        CANCEL</button>
-                                                </div>
-                                                <div class="col-3">
-                                                    <button type="submit" class="btn btn-next"><i
-                                                            class="fa fa-arrow-right"></i>
-                                                        NEXT</button>
-                                                </div>
-                                                <div class="col-3">
-                                                    <button type="submit" class="btn btn-save"><i
-                                                            class="fa fa-check"></i>
-                                                        SAVE</button>
-                                                </div>
-                                                <div class="col-3">
-                                                    <button type="submit" class="btn btn-preview"><i
-                                                            class="fa fa-check"></i>
-                                                        PREVIEW</button>
-                                                </div>
+
+
+
+                                            <div class="row padding btnlist">
+
+<ul>
+    <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CANCEL</button></li>
+    <li> <button type="button" class="btn btn-save" style="background: #000;"><i class="fa fa-close"></i> DELEGATE</button></li>
+    <li> <button type="button" class="btn btn-save" style="background: #000;"><i class="fa fa-close"></i> SEND FOR REVIEW</button></li>
+    <li> <button type="button" class="btn btn-save"><i class="fa fa-close"></i> SAVE DRAFT</button></li> 
+     <li> <button type="button" class="btn btn-save"><i class="fa fa-close"></i> PUBLISH</button></li>
+</ul>
+
+                                            
                                             </div>
                                         </div>
 

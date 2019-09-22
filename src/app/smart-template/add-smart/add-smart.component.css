@@ -114,9 +114,10 @@
     }
     .progress-bar{
       color: rgb(230, 233, 231);
-      background-color: #0099cc
-      ;
-
+      background-color: #0099cc;
+      background-color: rgb(97, 38, 132);
+      margin: 2px 3px;
+      border-radius: 17px;
     }
 .bgpurple{
   background-color: rgb(97, 38, 132);
@@ -135,6 +136,49 @@ hr{
   margin-bottom: 15px;
 }
 
+  .secondtd td{
+    padding-top: 0;
+  }  
     
-    
+  .borderedpage .form-group{
+    margin-top: 21px;
+ }
+ .borderedpage label{
+  margin-bottom: 11px;
   
+
+
+ }
+ .bgpurplesmart{
+   margin-bottom: 0;
+ }
+ .borderedpage{
+  width: 100%;
+ }
+ .borderedpage2 .form-group{
+  margin-top: 26px;
+
+}
+.modal-body{
+  padding-left: 0;
+}
+.btnlist{
+  display: block;
+  text-align: center;
+}
+.btnlist ul li{
+  display: inline-block;
+  margin: 0 8px;
+}
+.tfooter_btn_col .btn{
+  padding: 9px 15px;
+}
+.btnlist1 ul  li{
+  margin: 0 91px; 
+}
+.btnlist2 ul li{
+  margin: 0 30px; 
+}
+.btnlist3 ul li{
+  margin: 0 112px; 
+}

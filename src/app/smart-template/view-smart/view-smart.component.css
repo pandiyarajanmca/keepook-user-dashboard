@@ -19,3 +19,26 @@
  right: -40px;
  top: 7px;
 }
+
+
+
+.modal-body{
+    padding-bottom: 6%;
+}
+.modal-body label{
+    text-align: left;
+    float: left;
+}
+.modal-body .col{
+   margin-bottom: 19px;
+}
+.modal-footer{
+    border-top: 1px solid #b8b8b8;
+}
+.tfooter_btn_col{
+    border-top:none;
+}
+
+.modal-header{
+    background: #f6f6f6;text-transform: uppercase;
+}
