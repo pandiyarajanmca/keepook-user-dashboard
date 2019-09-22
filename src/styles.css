@@ -306,7 +306,7 @@ input {
   width: 100%;
   padding: 15px;
   border: 1px solid #333;
-  min-height: 240px;
+  min-height: 220px;
 }
 
 .task-body li a span {
@@ -1597,7 +1597,8 @@ table.table .status.active {
   text-decoration: none;
   color: #ffffff;
   border-style: solid;
-  border-width: 4px 2px 0;
+  /* border-width: 4px 2px 0; */
+  border-width: 2px 1px 0;
   display: block;
   padding: 10px;
   line-height: 22px;
@@ -1608,10 +1609,12 @@ table.table .status.active {
 }
 
 .dash-link a img {
-  width: 13px;
+  /* width: 13px; */
+  width: 16px;
   line-height: 10px;
   display: inline-block;
-  margin-right: 3px;
+  /* margin-right: 3px; */
+  margin-right: 5px;
   margin-top: -3px;
 }
 
