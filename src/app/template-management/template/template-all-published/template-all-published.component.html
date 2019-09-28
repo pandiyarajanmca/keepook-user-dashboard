@@ -1,0 +1,284 @@
+<!-- <p>template-edit-single-pending works!</p> -->
+
+
+<!-- <p>template-edit-delegator works!</p> -->
+
+
+<div class="row mt-3 create_new_company">
+        <div class="container">
+          <!--title-->
+          <div class=" row-div">
+            <div class="title_col">
+              <a (click)='goBack()' class="back_btn"><i class="fa fa-mail-reply"></i> Back</a>
+            </div>
+      
+            <ul class="subm">
+              <li>Templates <a href="">/</a> </li>
+              <li><a href="">Add </a></li>
+            </ul>
+            <!-- <h1 class="heading">Create a New Company</h1> -->
+          </div>
+          <!--/title-->
+      
+          <!--data-section-->
+          <div class="data_section row-div">
+            <div class="data_title row-div" style="padding: 18px 10px;position: relative;">
+              <h3>Edit Template</h3>
+            
+      
+            </div>
+      
+      
+      
+            <div class="data_inner row-div">
+              <div class="row">
+                <!--left-sidebar-->
+                <div class="col-12 col-lg-3 left_sidebar">
+                  <app-entity-sidebar></app-entity-sidebar>
+                </div>
+      
+                <!--right_container-->
+                <div class="col-12 col-lg-9 right_container">
+                        <form class="inner_content row-div ">
+                        <!-- <form [formGroup]="createCompanyForm" class="inner_content row-div " (ngSubmit)="createCompanySubmit()"> -->
+                    <div class="data_inner row-div">
+                        <div class="table-form">
+    
+                        </div>
+    
+                        <div class="data_inner row-div">
+                            <div class="table-form col-12"
+                                style="border: 1px black solid; border-bottom: 2px #663399 solid; padding: 10px;">
+                               
+    
+    
+                                <!-- new table top -->
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                            <div class="row">
+                                                    <div class="col-sm-3">
+                                                            <label for="Student" style="    padding-top: 6px;">Search:</label>
+                                                </div>
+                                                <div class="col-sm-9 search-box-container search-box-container-new">
+                                                        <input type="text" placeholder="Type to filter" />
+                                                    </div>
+                                                </div>
+                                    </div>
+                                    <div class="col-sm-4 text-center">
+                                        <div class=" module-col">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal" style="padding-top: 3px;padding-bottom: 3px;"><i class="fa fa-filter"
+                                                    style="margin-right: 5px;">Advance Filter</i></button>
+                                            <!-- Popup Modal -->
+                                            <div class="modal fade" id="myModal">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+    
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <h5 style="margin-bottom: 0;"><i class="fa fa-filter"
+                                                                    style="margin-right: 5px;"></i>Advance Filter
+                                                            </h5>
+                                                            <button type="button" class="close"
+                                                                data-dismiss="modal">&times;</button>
+                                                        </div>
+    
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+    
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label>Type</label>
+                                                                    <select class="form-control">
+                                                                        <option>ALL</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <label for="exampleFormControlInput1">Published
+                                                                        Template</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleFormControlInput1"
+                                                                        placeholder="search">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label>Smart Template</label>
+                                                                    <select class="form-control">
+                                                                        <option>ALL</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <label for="date-picker-example">Date of Creation</label>
+                                                                    <input placeholder="Selected date" type="text"
+                                                                        id="date-picker-example"
+                                                                        class="form-control datepicker">
+    
+    
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <label>Created By</label>
+                                                                    <select class="form-control">
+                                                                        <option>ALL</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <label>Status</label>
+                                                                    <select class="form-control">
+                                                                        <option>ALL</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+    
+                                                        </div>
+    
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <div class="tfooter_btn_col p-3 ">
+                                                                <div class="row padding">
+                                                                    <div class="col" style="text-align:left;">
+                                                                        <button type="button"
+                                                                            class="btn btn-cancel"><i
+                                                                                class="fa fa-close"
+                                                                                style="float:left"></i>
+                                                                            CANCEL</button>
+                                                                    </div>
+    
+                                                                    <div class="col">
+                                                                        <button type="submit"
+                                                                            class="btn btn-preview"
+                                                                            style="float: right"><i
+                                                                                class="fa fa-check"></i>
+                                                                            APPLY</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End popup modal -->
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-sm-5">
+                                            <div class="row">
+                                                    <div class="col-sm-9" style="text-align:right;">
+                                                            <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
+                                                </div>
+                                                <div class="col-sm-2"  style="    width: 50%;
+                                                position: relative;
+                                                top: 5px;padding:0;">
+                                                        <select name="" style="width: 75%;">
+                                                                <option value="">All</option>
+                                                                <option value="">10</option>
+                                                            </select>
+                                                    </div>
+                                                </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="table-resposive" style="padding-bottom:8px;">
+                                <table class="w-100 table table-bordered">
+    
+                                    <thead>
+    
+                                        <tr>
+                                            <th>TYPE</th>
+                                            <th>FILE NAME</th>
+                                            <th>DATE OF CREATION</th>
+                                            <th>CREATED BY</th>
+                                            <th>PUBLISHED DATE</th>
+                                            <th>PUBLISHED BY</th>
+                                            <th>SMART TEMPLATE</th>
+                                            <th>ACTION</th>
+    
+                                        </tr>
+                                    </thead>
+    
+    
+                                    <tbody>
+                                            <tr class="table-bordered">
+                                                    <td>MUR</td>
+                                                    <td><a href="#">2018_MMFA_111</a></td>
+                                                    <td>10.10.2017</td>
+                                                    <td>Jhon Doe</td>
+                                                    <td >10.10.2017</td>     
+                                                    <td >Business Admin</td>  
+                                                    <td><a href="#">2018_MMFA_111</a></td>                                                  
+                                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                </tr>
+                                            <tr class="table-bordered">
+                                                    <td>MUR</td>
+                                                    <td><a href="#">2018_MMFA_111</a></td>
+                                                    <td>10.10.2017</td>
+                                                    <td>Jhon Doe</td>
+                                                    <td >10.10.2017</td>     
+                                                    <td >Business Admin</td>  
+                                                    <td><a href="#">2018_MMFA_111</a></td>                                                  
+                                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                </tr>
+                                            <tr class="table-bordered">
+                                                    <td>MUR</td>
+                                                    <td><a href="#">2018_MMFA_111</a></td>
+                                                    <td>10.10.2017</td>
+                                                    <td>Jhon Doe</td>
+                                                    <td >10.10.2017</td>     
+                                                    <td >Business Admin</td>  
+                                                    <td><a href="#">2018_MMFA_111</a></td>                                                  
+                                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                </tr>
+                                            <tr class="table-bordered">
+                                                    <td>MUR</td>
+                                                    <td><a href="#">2018_MMFA_111</a></td>
+                                                    <td>10.10.2017</td>
+                                                    <td>Jhon Doe</td>
+                                                    <td >10.10.2017</td>     
+                                                    <td >Business Admin</td>  
+                                                    <td><a href="#">2018_MMFA_111</a></td>                                                  
+                                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                </tr>
+                                            <tr class="table-bordered">
+                                                    <td>MUR</td>
+                                                    <td><a href="#">2018_MMFA_111</a></td>
+                                                    <td>10.10.2017</td>
+                                                    <td>Jhon Doe</td>
+                                                    <td >10.10.2017</td>     
+                                                    <td >Business Admin</td>  
+                                                    <td><a href="#">2018_MMFA_111</a></td>                                                  
+                                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                                                </tr>
+                                        
+                                            
+    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!--/data-section-->
+                </form>
+    
+                </div>
+    
+    
+              
+    
+                <!--/right_container-->
+              </div>
+            </div>
+      
+          </div>
+          <!--/data-section-->
+      
+      
+        </div>
+      </div>
+      <!--/inner-container-->
+      
+    

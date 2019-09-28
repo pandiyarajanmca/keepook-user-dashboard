@@ -24,6 +24,10 @@ import { TemplateEditComponent } from './template/template-edit/template-edit.co
 import { TemplateEditDelegatorComponent } from './template/template-edit-delegator/template-edit-delegator.component';
 import { TemplateEditSinglePendingComponent } from './template/template-edit-single-pending/template-edit-single-pending.component';
 import { TemplateEditSinglePublishedComponent } from './template/template-edit-single-published/template-edit-single-published.component';
+import { AllTemplateComponent } from './template/all-template/all-template.component';
+import { TemplateAllDelegatedComponent } from './template/template-all-delegated/template-all-delegated.component';
+import { TemplateAllExpiredComponent } from './template/template-all-expired/template-all-expired.component';
+import { TemplateAllPublishedComponent } from './template/template-all-published/template-all-published.component';
 
 
 
@@ -49,7 +53,11 @@ import { TemplateEditSinglePublishedComponent } from './template/template-edit-s
     TemplateEditComponent,
     TemplateEditDelegatorComponent,
     TemplateEditSinglePendingComponent,
-    TemplateEditSinglePublishedComponent
+    TemplateEditSinglePublishedComponent,
+    AllTemplateComponent,
+    TemplateAllDelegatedComponent,
+    TemplateAllExpiredComponent,
+    TemplateAllPublishedComponent
   ],
   imports: [
     CommonModule,    

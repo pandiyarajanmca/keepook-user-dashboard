@@ -1,3 +1,7 @@
+import { TemplateAllDelegatedComponent } from './template/template-all-delegated/template-all-delegated.component';
+import { TemplateAllExpiredComponent } from './template/template-all-expired/template-all-expired.component';
+import { TemplateAllPublishedComponent } from './template/template-all-published/template-all-published.component';
+import { AllTemplateComponent } from './template/all-template/all-template.component';
 import { TemplateEditSinglePublishedComponent } from './template/template-edit-single-published/template-edit-single-published.component';
 import { TemplateEditSinglePendingComponent } from './template/template-edit-single-pending/template-edit-single-pending.component';
 import { TemplateEditDelegatorComponent } from './template/template-edit-delegator/template-edit-delegator.component';
@@ -23,6 +27,10 @@ const routes: Routes = [
   { path: 'template-edit-delegator', component: TemplateEditDelegatorComponent },
   { path: 'template-edit-single-pending', component: TemplateEditSinglePendingComponent },
   { path: 'template-edit-single-published', component: TemplateEditSinglePublishedComponent },
+  { path: 'template-all', component: AllTemplateComponent },
+  { path: 'template-all-delegated', component: TemplateAllDelegatedComponent },
+  { path: 'template-all-expired', component: TemplateAllExpiredComponent },
+  { path: 'template-all-published', component: TemplateAllPublishedComponent },
   
 ];
 
