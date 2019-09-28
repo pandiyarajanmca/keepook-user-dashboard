@@ -1,3 +1,4 @@
+import { TemplateHistoryComponent } from './template/template-history/template-history.component';
 import { NgModule, ViewChild } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ViewTemplateComponent } from './template/view-template/view-template.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'edit-template', component: EditTemplateComponent },
   { path: 'edit-view-department', component: ViewDepartmentComponent },
   { path: 'edit-view-user-groups', component: ViewUserGroupComponent },
+  { path: 'template-history', component: TemplateHistoryComponent },
   
 ];
 

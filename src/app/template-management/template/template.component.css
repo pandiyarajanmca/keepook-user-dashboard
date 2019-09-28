@@ -53,8 +53,15 @@
   }
 
   .left_sidebar{
-      padding-left: 0;
+      /* padding-left: 0; */
+
+      padding-right: 0;
   }
   .right_container{
       padding-left: 0;
+  }
+
+
+  .data_title{
+      margin-bottom: 0;
   }

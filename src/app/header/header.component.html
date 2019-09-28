@@ -34,6 +34,24 @@
                     </div>
                 </div>
                 <div class="">
+                    <div class="search-col">
+                        <button class="search-btn">
+                            <i class="search-img fa fa-bell" style="position:relative; ">
+
+                                <span class="count" style="position:absolute;top: -7px;
+                                right: -9px;
+                                background: #129ec1;
+                                color: #fff;
+                                border-radius: 100%;
+                                width: 22px;
+                                font-size: 12px;
+                                height: 22px;
+                                line-height: 24px;">5</span>
+                            </i>
+                        </button>
+                    </div>
+                </div>
+                <div class="">
                     <div class="profile-dropdown">
                         <div class="dropdown">
                             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -83,7 +101,7 @@
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/template-management']">
                             <img src="assets/images/template-ts-black.png" alt="" class="b_img">
                             <img src="assets/images/template-ts.png" alt="" class="w_img">
-                            <span>Templete</span></a>
+                            <span>Template</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/smart-template']">
@@ -95,13 +113,16 @@
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/workflow-management']">
                             <img src="assets/images/workflow_icon.png" alt="" class="b_img">
                             <img src="assets/images/workflow_icon_w.png" alt="" class="w_img">
-                            <span>Workflows</span></a>
+                            <!-- <span>Workflows, Contracts</span> -->
+                            <span> Contracts</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/technical-settings']">
                             <img src="assets/images/setting_icon.png" alt="" class="b_img">
                             <img src="assets/images/setting_icon_w.png" alt="" class="w_img">
-                            <span>Technical Settings</span></a>
+                            <span> Tasks</span></a>
+                            <!-- <span>Technical Settings, Tasks</span></a> -->
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/reporting']">
