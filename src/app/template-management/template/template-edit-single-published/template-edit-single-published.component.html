@@ -1,0 +1,181 @@
+<!-- <p>template-edit-single-pending works!</p> -->
+
+
+<!-- <p>template-edit-delegator works!</p> -->
+
+
+<div class="row mt-3 create_new_company">
+    <div class="container">
+      <!--title-->
+      <div class=" row-div">
+        <div class="title_col">
+          <a (click)='goBack()' class="back_btn"><i class="fa fa-mail-reply"></i> Back</a>
+        </div>
+  
+        <ul class="subm">
+          <li>Templates <a href="">/</a> </li>
+          <li><a href="">Add </a></li>
+        </ul>
+        <!-- <h1 class="heading">Create a New Company</h1> -->
+      </div>
+      <!--/title-->
+  
+      <!--data-section-->
+      <div class="data_section row-div">
+        <div class="data_title row-div" style="padding: 18px 10px;position: relative;">
+          <h3>View Published  Template</h3>
+          <div class="report-col" style="position: absolute;right:10px;top:10px;">
+            <button class="btn btn-save" type="button" style="background: #fff;    border-radius: 30px;
+                                  padding: 9px 20px;
+                                  text-transform: uppercase;
+                                  color: #0099cc;"><i  class="fa fa-question" style="    background: #0099cc;
+                                  border-radius: 50%;
+                                  padding: 4px;
+                                  float: left;
+                                  margin-right: 9px;color:#fff;"></i> Help</button>
+          </div>
+  
+        </div>
+  
+  
+  
+        <div class="data_inner row-div">
+          <div class="row">
+            <!--left-sidebar-->
+            <div class="col-12 col-lg-3 left_sidebar">
+              <app-entity-sidebar></app-entity-sidebar>
+            </div>
+  
+            <!--right_container-->
+            <div class="col-12 col-lg-9 right_container">
+              <form [formGroup]="createCompanyForm" class="inner_content row-div " (ngSubmit)="createCompanySubmit()">
+                <div class="create_company_form global_form">
+                  
+                  <div class="form-group city_field ">
+                    <label for="" class="label_field">File Name</label>
+  
+                    <div class="controls_field ">
+                      <label for="" class="label_field">2018_MMFA_112</label>
+                    
+                      <ul class="editdelegate">
+                        <li>
+                          <button class="btn btn-save editdelegatebtn" type="button"><i  class="fa fa-eye"></i> View Doc</button>
+                        </li>
+                        <li>
+                          <button style="background: #000;" class="btn btn-save editdelegatebtn" type="button"><i  class="fa fa-eye" ></i> View History</button>
+  
+                        </li>
+                        <li>
+                          <button style="background: #612684;" class="btn btn-save editdelegatebtn" type="button"><i  class="fa fa-eye" ></i> View Interactive Contract</button>
+  
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+  
+                  <div class="form-group city_field ">
+                          <label for="" class="label_field">Priority</label>      
+                          <div class="controls_field ">
+                            <label for="" class="label_field">High</label>
+                          </div>
+                        </div>
+                  <div class="form-group city_field ">
+                          <label for="" class="label_field">Assigned By</label>      
+                          <div class="controls_field ">
+                            <label for="" class="label_field">Arushi Joshi</label>
+                          </div>
+                        </div>
+                  <div class="form-group city_field ">
+                          <label for="" class="label_field">Delegated To</label>      
+                          <div class="controls_field ">
+                            <label for="" class="label_field">Marie White</label>
+                          </div>
+                        </div>
+  
+                      
+                        <div class="form-group city_field">
+                              <label for="" class="label_field">Due Date</label>
+                              <div class="controls_field">
+                                      <input type="date" formControlName="address" name="document" class="form-control">       
+                              </div>
+                            </div>
+                  <div class="form-group city_field">
+                    <label for="" class="label_field">Delegation Description</label>
+                    <div class="controls_field">
+                      <textarea name="" id="" cols="42" rows="5"></textarea>                
+                    </div>
+                  </div>
+              
+  
+                  <div class="form-group city_field">
+                    <label for="" class="label_field">Workflow Classification</label>
+                    <div class="controls_field">
+                      <input type="text-area" formControlName="address" name="document" class="form-control">
+                      <small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
+                                              <div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
+                                                  required
+                                              </div>
+                                          </small>
+                    </div>
+                    <div class="uploadfile1"> 
+                          <button  class="btn btn-save editdelegatebtn1" type="button"><i  class="fa fa-eye" ></i> View Flow</button>
+                          
+  
+                          <!-- <label> <i  class="fa fa-file"></i> Choose File
+                              <input type="file" size="60" >
+                              </label> -->
+                  </div>
+                  </div>
+                  <div class="form-group city_field">
+                    <label for="" class="label_field">Step No.</label>
+                    <div class="controls_field">
+                      <input type="text-area" formControlName="address" name="document" class="form-control">
+                      <small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
+                                              <div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
+                                                  required
+                                              </div>
+                                          </small>
+                    </div>
+                  </div>
+      
+                  <div class="form-group city_field">
+                          <label for="" class="label_field">Comments</label>
+                          <div class="controls_field">
+                            <textarea name="" id="" cols="42" rows="5"></textarea>                
+                          </div>
+                        </div>
+              
+              
+  
+                </div>
+  
+                <div class="tfooter_btn_col" style="padding-left: 0;padding-right: 0;">
+  
+  
+                  <div class="row padding btnlist">
+  
+                    <ul>
+                      <li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CLOSE</button></li>
+                    </ul>
+  
+  
+                  </div>
+  
+                  <!-- <button type="button" class="btn btn-cancel"><i class="fa fa-close"></i> Cancel</button>
+                                  <button type="submit" class="btn btn-save"><i class="fa fa-check"></i> Save</button> -->
+                </div>
+  
+              </form>
+            </div>
+            <!--/right_container-->
+          </div>
+        </div>
+  
+      </div>
+      <!--/data-section-->
+  
+  
+    </div>
+  </div>
+  <!--/inner-container-->
+  

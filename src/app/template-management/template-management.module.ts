@@ -20,6 +20,10 @@ import { ViewOrganizationComponent } from './organization/view-organization/view
 import { ViewUserGroupComponent } from './user-group/view-user-group/view-user-group.component';
 import { EditUserGroupComponent } from './user-group/edit-user-group/edit-user-group.component';
 import { TemplateHistoryComponent } from './template/template-history/template-history.component';
+import { TemplateEditComponent } from './template/template-edit/template-edit.component';
+import { TemplateEditDelegatorComponent } from './template/template-edit-delegator/template-edit-delegator.component';
+import { TemplateEditSinglePendingComponent } from './template/template-edit-single-pending/template-edit-single-pending.component';
+import { TemplateEditSinglePublishedComponent } from './template/template-edit-single-published/template-edit-single-published.component';
 
 
 
@@ -41,7 +45,11 @@ import { TemplateHistoryComponent } from './template/template-history/template-h
     EditUserGroupComponent,
     ViewUserGroupComponent,
     DepartmentComponent,
-    TemplateHistoryComponent
+    TemplateHistoryComponent,
+    TemplateEditComponent,
+    TemplateEditDelegatorComponent,
+    TemplateEditSinglePendingComponent,
+    TemplateEditSinglePublishedComponent
   ],
   imports: [
     CommonModule,    

@@ -1,0 +1,106 @@
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 3% 5%;
+  padding-left: 0;
+  /* margin-top:-4% */
+}
+
+.jumbotron h3 {
+  margin-bottom: 0;
+  padding-left: 7%;
+}
+
+.uploadfile label {
+  padding: 10px;
+  background: #f6f6f6;
+  display: table;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+.uploadfile input[type="file"] {
+  display: none;
+}
+
+.uploadfile1 label {
+  padding: 10px;
+  background: #f6f6f6;
+  display: table;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+.uploadfile1 input[type="file"] {
+  display: none;
+}
+
+.uploadfile1 {
+  position: absolute;
+  right: 17%;
+}
+.editdelegatebtn1 {
+    background: #0099cc;
+    border-radius:9px;
+    padding: 9px 9px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+.btnlist {
+  display: block;
+  text-align: center;
+}
+
+.btnlist ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.global_form .form-group {
+  margin-bottom: 24px;
+  padding-left: 3%;
+}
+
+.inner_content {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.left_sidebar {
+  /* padding-left: 0; */
+  padding-right: 0;
+}
+
+.right_container {
+  padding-left: 0;
+}
+
+.data_title {
+  margin-bottom: 0;
+}
+
+.editdelegate {
+  /* position: absolute; */
+  right: 10px;
+  top: 10px;
+}
+.editdelegate li{
+    display: inline-block;width: 26%;
+}
+.editdelegatebtn {
+  background: #0099cc;
+  border-radius:9px;
+  padding: 9px 12px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.editdelegatebtn i {
+  /* background: #fff; */
+  border-radius: 50%;
+  padding: 4px;
+  float: left;
+  margin-right: 9px;
+  color: #fff;
+}
