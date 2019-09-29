@@ -9,28 +9,20 @@ import { TemplateEditComponent } from './template/template-edit/template-edit.co
 import { TemplateHistoryComponent } from './template/template-history/template-history.component';
 import { NgModule, ViewChild } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ViewTemplateComponent } from './template/view-template/view-template.component';
-import { ViewDepartmentComponent } from './department/view-department/view-department.component';
-import { ViewUserGroupComponent } from './user-group/view-user-group/view-user-group.component';
-import { EditTemplateComponent } from './template/edit-template/edit-template.component';
 import { TemplateManagementComponent } from './template-management.component';
 import { TemplateComponent } from './template/template.component'
 const routes: Routes = [
   { path: '', component: TemplateManagementComponent },
   { path: 'add-template', component: TemplateComponent },
-  { path: 'view-template', component: ViewTemplateComponent },
-  { path: 'edit-template', component: EditTemplateComponent },
-  { path: 'edit-view-department', component: ViewDepartmentComponent },
-  { path: 'edit-view-user-groups', component: ViewUserGroupComponent },
   { path: 'template-history', component: TemplateHistoryComponent },
-  { path: 'template-edit', component: TemplateEditComponent },
-  { path: 'template-edit-delegator', component: TemplateEditDelegatorComponent },
-  { path: 'template-edit-single-pending', component: TemplateEditSinglePendingComponent },
-  { path: 'template-edit-single-published', component: TemplateEditSinglePublishedComponent },
-  { path: 'template-all', component: AllTemplateComponent },
-  { path: 'template-all-delegated', component: TemplateAllDelegatedComponent },
-  { path: 'template-all-expired', component: TemplateAllExpiredComponent },
-  { path: 'template-all-published', component: TemplateAllPublishedComponent },
+  { path: 'edit-template', component: TemplateEditComponent },
+  { path: 'edit-delegator-template', component: TemplateEditDelegatorComponent },
+  { path: 'edit-single-pending-template', component: TemplateEditSinglePendingComponent },
+  { path: 'edit-single-published-template', component: TemplateEditSinglePublishedComponent },
+  { path: 'view-all-template', component: AllTemplateComponent },
+  { path: 'view-all-delegated-template-', component: TemplateAllDelegatedComponent },
+  { path: 'view-all-expired-template-', component: TemplateAllExpiredComponent },
+  { path: 'view-all-published-template', component: TemplateAllPublishedComponent },
   
 ];
 
