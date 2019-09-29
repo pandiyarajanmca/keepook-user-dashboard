@@ -21,6 +21,9 @@ import { ReplaceExistingPendingComponent } from './template/replace-existing-pen
 import { ViewSignleDelegatedComponent } from './template/view-signle-delegated/view-signle-delegated.component';
 import { ViewSinglePendingComponent } from './template/view-single-pending/view-single-pending.component';
 import { ViewSinglePublishedComponent } from './template/view-single-published/view-single-published.component';
+import { AllDelegatedComponent } from './template/all-delegated/all-delegated.component';
+import { AllExpiredComponent } from './template/all-expired/all-expired.component';
+import { AllPublishedComponent } from './template/all-published/all-published.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { ViewSinglePublishedComponent } from './template/view-single-published/v
     ReplaceExistingPendingComponent,
     ViewSignleDelegatedComponent,
     ViewSinglePendingComponent,
-    ViewSinglePublishedComponent
+    ViewSinglePublishedComponent,
+    AllDelegatedComponent,
+    AllExpiredComponent,
+    AllPublishedComponent
   ],
   imports: [
     CommonModule,    
