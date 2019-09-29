@@ -1,0 +1,149 @@
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Templates /</li>
+      <li>Edit /</li>
+      <li>Pending /</li>
+      <li>Template Edit /</li>
+      <li><a href="">Template ID </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Replace Existing Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save" type="button"><i  class="fa fa-question" ></i> Help</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-entity-sidebar></app-entity-sidebar>
+    </div>
+    <!--right_container-->
+    <div class="col-12 col-lg-9 p-0">
+      <form action="" class="tempform">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-6">
+              <h3>Replace with A New Template</h3>
+            </div>
+            <div class="col-4 uploadfile">
+              <label>  <i  class="fa fa-upload"></i> Upload <input type="file" size="60" >	  </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">File Name </label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" name="">
+          </div>
+          <div class="col-lg-4">
+            <ul class="editbtnlist">
+              <li style="margin-right: 8px;">
+                <div class="uploadfile1">
+                  <label> <i  class="fa fa-file"></i> Choose File <input type="file" size="60" ></label>
+                </div>
+              </li>
+              <li>
+                <div class="preview">
+                  <button type="button" class="btn btn-light"><i  class="fa fa-search" ></i>Preview</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Content</label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Version Comments</label>
+          </div>
+          <div class="col-lg-4">
+            <textarea name="" id="" cols="38" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Hierarchy </label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">New Version Number</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Creation Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Effective Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Expiration Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Send Email to Business Admins</label>
+          </div>
+          <div class="col-lg-1">
+            <input type="radio" class="form-control">
+          </div>
+        </div>
+        <div class="col-12 tempbtn">
+          <ul>
+            <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+            <li> <button type="button" class="btn btn-dark"><i class="fa fa-close"></i> delegate</button></li>
+            <li> <button type="button" class="btn btn-dark"><i class="fa fa-close"></i> send for preview </button></li>
+            <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> save as draft</button></li>
+            <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> publish</button></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

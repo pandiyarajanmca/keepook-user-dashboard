@@ -1,3 +1,7 @@
+import { ViewSinglePublishedComponent } from './template/view-single-published/view-single-published.component';
+import { ViewSinglePendingComponent } from './template/view-single-pending/view-single-pending.component';
+import { ViewSignleDelegatedComponent } from './template/view-signle-delegated/view-signle-delegated.component';
+import { ReplaceExistingPendingComponent } from './template/replace-existing-pending/replace-existing-pending.component';
 import { TemplateAllDelegatedComponent } from './template/template-all-delegated/template-all-delegated.component';
 import { TemplateAllExpiredComponent } from './template/template-all-expired/template-all-expired.component';
 import { TemplateAllPublishedComponent } from './template/template-all-published/template-all-published.component';
@@ -23,6 +27,10 @@ const routes: Routes = [
   { path: 'view-all-delegated-template-', component: TemplateAllDelegatedComponent },
   { path: 'view-all-expired-template-', component: TemplateAllExpiredComponent },
   { path: 'view-all-published-template', component: TemplateAllPublishedComponent },
+  { path: 'exist-pending', component: ReplaceExistingPendingComponent },
+  { path: 'view-delegate', component: ViewSignleDelegatedComponent },
+  { path: 'view-pending', component: ViewSinglePendingComponent },
+  { path: 'view-published', component: ViewSinglePublishedComponent },
   
 ];
 

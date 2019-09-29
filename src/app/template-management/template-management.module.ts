@@ -17,6 +17,10 @@ import { AllTemplateComponent } from './template/all-template/all-template.compo
 import { TemplateAllDelegatedComponent } from './template/template-all-delegated/template-all-delegated.component';
 import { TemplateAllExpiredComponent } from './template/template-all-expired/template-all-expired.component';
 import { TemplateAllPublishedComponent } from './template/template-all-published/template-all-published.component';
+import { ReplaceExistingPendingComponent } from './template/replace-existing-pending/replace-existing-pending.component';
+import { ViewSignleDelegatedComponent } from './template/view-signle-delegated/view-signle-delegated.component';
+import { ViewSinglePendingComponent } from './template/view-single-pending/view-single-pending.component';
+import { ViewSinglePublishedComponent } from './template/view-single-published/view-single-published.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { TemplateAllPublishedComponent } from './template/template-all-published
     AllTemplateComponent,
     TemplateAllDelegatedComponent,
     TemplateAllExpiredComponent,
-    TemplateAllPublishedComponent
+    TemplateAllPublishedComponent,
+    ReplaceExistingPendingComponent,
+    ViewSignleDelegatedComponent,
+    ViewSinglePendingComponent,
+    ViewSinglePublishedComponent
   ],
   imports: [
     CommonModule,    
