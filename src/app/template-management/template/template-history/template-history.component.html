@@ -1,208 +1,103 @@
-<!-- <p>template-history works!</p> -->
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Templates /</li>
+      <li>Edit /</li>
+      <li>Pending /</li>
+      <li>Template View /</li>
+      <li><a href="">Template History </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Edit Templates</h3>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-entity-sidebar></app-entity-sidebar>
+    </div>
+    <!--right_container-->
+
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+      <ul class="toptabel">
+        <li class="toplabel1">
+
+          <p class="search-icon">Search : <input class="form-control" id="myInput" type="text" placeholder="Type to filter...">
+          </p>
+        </li>
+        <li class="toplabel2">
+
+        </li>
+        <li class="toplabel3">
+
+          <p>Show Per Page :
+
+            <select name="">
+                                <option  value="" >All</option>
+                                <option  value="" >10</option>
+                              </select>
+          </p>
+        </li>
+      </ul>
 
 
-<div class="row mt-3 create_new_company">
-	<div class="container">
-		<!--title-->
-		<div class=" row-div">
-			<div class="title_col">
-				<a (click)='goBack()' class="back_btn"><i class="fa fa-mail-reply"></i> Back</a>
-			</div>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>version</th>
+              <th>author </th>
+              <th> creation date</th>
+              <th>published on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.0.4</td>
+              <td>Adam Smith</td>
+              <td>10.10.2017 <span class="time">10.30am</span></td>
+              <td>10.10.2017</td>
+            </tr>
+            <tr>
+              <p><b>Comments </b> : Amendments to section 7</p>
+            </tr>
+            <tr>
+              <td>1.0.4</td>
+              <td>Adam Smith</td>
+              <td>10.10.2017 <span class="time">10.30am</span></td>
+              <td>10.10.2017</td>
+            </tr>
+            <tr>
+              <p><b>Comments </b> : Amendments to section 7</p>
+            </tr>
+            <tr>
+              <td>1.0.4</td>
+              <td>Adam Smith</td>
+              <td>10.10.2017 <span class="time">10.30am</span></td>
+              <td>10.10.2017</td>
+            </tr>
+            <tr>
+              <p><b>Comments </b> : Amendments to section 7</p>
+            </tr>
+            <tr>
+              <td>1.0.4</td>
+              <td>Adam Smith</td>
+              <td>10.10.2017 <span class="time">10.30am</span></td>
+              <td>10.10.2017</td>
+            </tr>
+            <tr>
+              <p><b>Comments </b> : Amendments to section 7</p>
+            </tr>
 
-			<ul class="subm">
-				<li>Templates <a href="">/</a> </li>
-				<li><a href="">Add </a></li>
-			</ul>
-			<!-- <h1 class="heading">Create a New Company</h1> -->
-		</div>
-		<!--/title-->
-
-		<!--data-section-->
-		<div class="data_section row-div">
-			<div class="data_title row-div" style="padding: 18px 10px;position: relative;">
-				<h3>Add New Template</h3>
-				<div class="report-col" style="position: absolute;right:10px;top:10px;">
-								<button  class="btn btn-save" type="button" style="background: #fff;    border-radius: 30px;
-								padding: 9px 20px;
-								text-transform: uppercase;
-								color: #0099cc;"><i  class="fa fa-question" style="    background: #0099cc;
-								border-radius: 50%;
-								padding: 4px;
-								float: left;
-								margin-right: 9px;color:#fff;"></i> Help</button>
-					</div>
-
-			</div>
-
-
-			
-			<div class="data_inner row-div">
-				<div class="row">
-					<!--left-sidebar-->
-					<div class="col-12 col-lg-3 left_sidebar">
-						<app-entity-sidebar></app-entity-sidebar>
-					</div>
-
-					<!--right_container-->
-					<!-- <div class="col-12 col-lg-9 right_container">
-						
-                    </div> -->
-                    
-
-                    <div class="col-12 col-lg-9 right_container">
-                        <div class="data_inner row-div">
-                            <div class="table-form">
-
-                            </div>
-
-                            <div class="data_inner row-div">
-                                <div class="table-form col-12"
-                                    style="border: 1px black solid; border-bottom: 2px #663399 solid; padding: 10px;">
-                                   
+          </tbody>
+        </table>
+      </div>
+    </div>
 
 
-                                    <!-- new table top -->
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                                <div class="row">
-                                                        <div class="col-sm-3">
-                                                                <label for="Student" style="    padding-top: 6px;">Search:</label>
-                                                    </div>
-                                                    <div class="col-sm-9 search-box-container search-box-container-new">
-                                                            <input type="text" placeholder="Document/ File Name" />
-                                                        </div>
-                                                    </div>
-                                        </div>
-
-
-                                        <div class="col-sm-9 showright">
-                                                <div class="row">
-                                                        <div class="col-sm-10" style="text-align:right;">
-                                                                <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
-                                                    </div>
-                                                    <div class="col-sm-1"  style="    width: 50%;
-                                                    position: relative;
-                                                    top: 5px;padding:0;">
-                                                            <select name="" style="width: 75%;">
-                                                                    <option value="">All</option>
-                                                                    <option value="">10</option>
-                                                                </select>
-                                                        </div>
-                                                    </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="table-resposive" style="padding-bottom:8px;">
-                                    <table class="w-100 table table-bordered">
-
-                                        <thead>
-
-                                            <tr>
-                                                <th>VERSION</th>
-                                                <th>AUTHOR</th>
-                                                <th>  CREATION DATE</th> 
-                                                <th>PUBLISHED ON </th>
-
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody>
-                                            <tr class="table-bordered">
-                                                <td>1.0.4</td>
-                                                <td class="text-primary">Adam Smith</td>
-                                                <td class="text-primary">10-10-2017 10.30am</td>
-                                                <td>10-10-2017</td>
-                                               
-                                            </tr>
-                                            <!-- <tr class="table-bordered">
-                                                <td class="commenttd"></td>
-                                                <td ></td>
-                                                <td></td>
-                                                <td></td>
-                                                -->
-                                            <!-- </tr> -->
-                                            <tr class="table-bordered">
-                                                <P class="tablecomment">
-                                                    <b>Comments :</b> Amendements to section7
-                                                </P>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <td>1.0.4</td>
-                                                <td class="text-primary">Adam Smith</td>
-                                                <td class="text-primary">10-10-2017 10.30am</td>
-                                                <td>10-10-2017</td>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <P class="tablecomment">
-                                                    <b>Comments :</b> Amendements to section7
-                                                </P>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <td>1.0.4</td>
-                                                <td class="text-primary">Adam Smith</td>
-                                                <td class="text-primary">10-10-2017 10.30am</td>
-                                                <td>10-10-2017</td>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <P class="tablecomment">
-                                                    <b>Comments :</b> Amendements to section7
-                                                </P>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <td>1.0.4</td>
-                                                <td class="text-primary">Adam Smith</td>
-                                                <td class="text-primary">10-10-2017 10.30am</td>
-                                                <td>10-10-2017</td>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <P class="tablecomment">
-                                                    <b>Comments :</b> Amendements to section7
-                                                </P>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <td>1.0.4</td>
-                                                <td class="text-primary">Adam Smith</td>
-                                                <td class="text-primary">10-10-2017 10.30am</td>
-                                                <td>10-10-2017</td>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                                <P class="tablecomment">
-                                                    <b>Comments :</b> Amendements to section7
-                                                </P>
-                                               
-                                            </tr>
-                                            <tr class="table-bordered">
-                                               
-                                               
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--/data-section-->
-
-
-                    </div>
-					<!--/right_container-->
-				</div>
-			</div>
-
-		</div>
-		<!--/data-section-->
-
-
-	</div>
-</div>
-<!--/inner-container-->
+  </div>
