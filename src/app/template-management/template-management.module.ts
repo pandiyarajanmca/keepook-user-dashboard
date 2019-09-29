@@ -24,6 +24,7 @@ import { ViewSinglePublishedComponent } from './template/view-single-published/v
 import { AllDelegatedComponent } from './template/all-delegated/all-delegated.component';
 import { AllExpiredComponent } from './template/all-expired/all-expired.component';
 import { AllPublishedComponent } from './template/all-published/all-published.component';
+import { TemplatePendingComponent } from './template/template-pending/template-pending.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AllPublishedComponent } from './template/all-published/all-published.co
     ViewSinglePublishedComponent,
     AllDelegatedComponent,
     AllExpiredComponent,
-    AllPublishedComponent
+    AllPublishedComponent,
+    TemplatePendingComponent
   ],
   imports: [
     CommonModule,    

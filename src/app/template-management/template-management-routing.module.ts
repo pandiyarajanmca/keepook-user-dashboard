@@ -1,3 +1,4 @@
+import { TemplatePendingComponent } from './template/template-pending/template-pending.component';
 import { AllPublishedComponent } from './template/all-published/all-published.component';
 import { AllExpiredComponent } from './template/all-expired/all-expired.component';
 import { AllDelegatedComponent } from './template/all-delegated/all-delegated.component';
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'all-delegated', component: AllDelegatedComponent },
   { path: 'all-expired', component: AllExpiredComponent },
   { path: 'all-published', component: AllPublishedComponent },
+  { path: 'pending', component: TemplatePendingComponent },
 
   
 ];
