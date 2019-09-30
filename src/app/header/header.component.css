@@ -1,0 +1,58 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+ li{
+    margin: 0 10px;
+}
+li label{
+    color: #fff;
+    margin-right: 6px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.newheader{
+    background: linear-gradient(90deg, #0099cc 0, #663399 100%);
+}
+.bg-dark{
+    background: linear-gradient(90deg, #0099cc 0, #663399 100%);
+}
+
+select {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #fff;
+    outline: none;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.fa{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+img{
+    max-width: 180px;
+}
+.dropdown button{
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.dropdown img{ max-width: 180px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+}
