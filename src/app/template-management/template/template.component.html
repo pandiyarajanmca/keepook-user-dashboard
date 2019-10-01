@@ -1,216 +1,127 @@
-<div class="row mt-3 create_new_company">
-	<div class="container">
-		<!--title-->
-		<div class=" row-div">
-			<div class="title_col">
-				<a (click)='goBack()' class="back_btn"><i class="fa fa-mail-reply"></i> Back</a>
-			</div>
-
-			<ul class="subm">
-				<li>Templates <a href="">/</a> </li>
-				<li><a href="">Add </a></li>
-			</ul>
-			<!-- <h1 class="heading">Create a New Company</h1> -->
-		</div>
-		<!--/title-->
-
-		<!--data-section-->
-		<div class="data_section row-div">
-			<div class="data_title row-div" style="padding: 18px 10px;position: relative;">
-				<h3>Add New Template</h3>
-				<div class="report-col" style="position: absolute;right:10px;top:10px;">
-								<button  class="btn btn-save" type="button" style="background: #fff;    border-radius: 30px;
-								padding: 9px 20px;
-								text-transform: uppercase;
-								color: #0099cc;"><i  class="fa fa-question" style="    background: #0099cc;
-								border-radius: 50%;
-								padding: 4px;
-								float: left;
-								margin-right: 9px;color:#fff;"></i> Help</button>
-					</div>
-
-			</div>
-
-
-			
-			<div class="data_inner row-div">
-				<div class="row">
-					<!--left-sidebar-->
-					<div class="col-12 col-lg-3 left_sidebar">
-						<app-entity-sidebar></app-entity-sidebar>
-					</div>
-
-					<!--right_container-->
-					<div class="col-12 col-lg-9 right_container">
-						<form [formGroup]="createCompanyForm" class="inner_content row-div"
-							(ngSubmit)="createCompanySubmit()">
-							<div class="create_company_form global_form">
-								<div class="jumbotron">
-									<div class="row">
-										<div class="col-6">
-											<h3>Create A New Template</h3>
-										</div>
-										<div class="col-4 uploadfile">
-												<label style="    margin-bottom: 0;
-												position: absolute;
-												top: -8px;">  <i  class="fa fa-upload"></i> Upload
-														<input type="file" size="60" >
-														</label> 
-											<!-- <button>Upload File</button> -->
-										</div>
-
-									</div>
-								</div>
-								<div class="form-group city_field ">
-									<label for="" class="label_field">Document</label>
-									
-									<div class="controls_field ">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										
-										</small>
-										 
-									</div>
-									<div class="uploadfile1"> 
-											<label> <i  class="fa fa-file"></i> Choose File
-												<input type="file" size="60" >
-												</label>
-									</div>
-								
-								</div>
-								<div class="form-group state_field">
-									<label class="label_field">Content</label>
-									<div class="controls_field">
-										<select class="form-control" formConrolName="address" name="content">
-											<option [value]="''"></option>
-											<option [value]="''"></option>
-										</select>
-										<small *ngIf="submitted && fConrols.content?.errors" class="text-danger">
-											<div *ngIf="fConrols.content?.errors?.required">&#x26A0;Please select the
-												content
-											</div>
-										</small>
-									</div>
-								</div>
-								<div class="form-group city_field">
-									<label for="" class="label_field">Version Comments</label>
-									<div class="controls_field">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										</small>
-									</div>
-								</div>
-								<div class="form-group city_field">
-									<label for="" class="label_field">Hirarchy</label>
-									<div class="controls_field">
-											<select class="form-control" formConrolName="address" name="content">
-												<option [value]="''"></option>
-												<option [value]="''"></option>
-											</select>
-											<small *ngIf="submitted && fConrols.content?.errors" class="text-danger">
-												<div *ngIf="fConrols.content?.errors?.required">&#x26A0;Please select the
-													content
-												</div>
-											</small>
-										</div>
-
-
-									<!-- <div class="controls_field">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										</small>
-									</div> -->
-								</div>
-
-								<div class="form-group city_field">
-									<label for="" class="label_field">New Version Number</label>
-									<div class="controls_field">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										</small>
-									</div>
-								</div>
-								<div class="form-group city_field">
-									<label for="" class="label_field">Creation Date</label>
-									<div class="controls_field">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										</small>
-									</div>
-								</div>
-
-								<div class="form-group city_field">
-									<label for="" class="label_field">Expiration Date</label>
-									<div class="controls_field">
-										<input type="text-area" formControlName="address" name="document"
-											class="form-control">
-										<small *ngIf="submitted && fConrols.city?.errors" class="text-danger">
-											<div *ngIf="fConrols.document?.errors?.required">&#x26A0; document name is
-												required
-											</div>
-										</small>
-									</div>
-								</div>
-								<div class="form-group city_field">
-										<label for="" class="label_field">Send Email to Business Admins</label>
-										<div class="controls_field" style="width:9%;">
-											<input type="radio" class="form-control">
-										
-										</div>
-									</div>
-
-							</div>
-
-							<div class="tfooter_btn_col" style="padding-left: 0;padding-right: 0;">
-
-
-									<div class="row padding btnlist">
-											
-											<ul>
-												<li> <button type="button" class="btn btn-save" style="background: #777;"><i class="fa fa-close"></i> CANCEL</button></li>
-												<li> <button type="button" class="btn btn-save" style="background: #000;"><i class="fa fa-close"></i> DELEGATE</button></li>
-												<li> <button type="button" class="btn btn-save" style="background: #000;"><i class="fa fa-paper-plane"></i> SEND FOR REVIEW</button></li>
-												<li> <button type="button" class="btn btn-save"><i class="fa fa-close"></i> SAVE DRAFT</button></li> 
-												 <li> <button type="button" class="btn btn-save"><i class="fa fa-close"></i> PUBLISH</button></li>
-											</ul>
-											
-																						
-																						</div>
-
-								<!-- <button type="button" class="btn btn-cancel"><i class="fa fa-close"></i> Cancel</button>
-								<button type="submit" class="btn btn-save"><i class="fa fa-check"></i> Save</button> -->
-							</div>
-
-						</form>
-					</div>
-					<!--/right_container-->
-				</div>
-			</div>
-
-		</div>
-		<!--/data-section-->
-
-
-	</div>
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Templates /</li>
+      <li><a href="">Add </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Add New Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save" type="button"><i  class="fa fa-question" ></i> Help</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-entity-sidebar></app-entity-sidebar>
+    </div>
+    <!--right_container-->
+    <div class="col-12 col-lg-9 p-0">
+      <form action="" class="tempform">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-6">
+              <h3>Create A New Template</h3>
+            </div>
+            <div class="col-4 uploadfile">
+              <label>  <i  class="fa fa-upload"></i> Upload <input type="file" size="60" >	  </label>
+            </div>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Document</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id=""  name="">
+          </div>
+          <div class="col-lg-3">
+            <div class="uploadfile1">
+              <label> <i  class="fa fa-file"></i> Choose File <input type="file" size="60" ></label>
+            </div>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Content</label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					  </select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Version Comments</label>
+          </div>
+          <div class="col-lg-4">
+            <textarea name="" id="" cols="38" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Hierarchy </label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							</select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">New Version Number</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Creation Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Expiration Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Send Email to Business Admins</label>
+          </div>
+          <div class="col-lg-1">
+            <input type="radio" class="form-control">
+          </div>
+        </div>
+        <div class="col-12 tempbtn">
+          <ul>
+            <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+            <li> <button type="button" class="btn btn-dark"><i class="fa fa-close"></i> delegate</button></li>
+            <li> <button type="button" class="btn btn-dark"><i class="fa fa-close"></i> send for preview </button></li>
+            <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> save as draft</button></li>
+            <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> publish</button></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
-<!--/inner-container-->
