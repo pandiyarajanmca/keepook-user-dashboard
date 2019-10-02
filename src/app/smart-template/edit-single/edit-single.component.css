@@ -373,3 +373,42 @@ th{
   .tablebottom{
     margin-bottom: 4%;
   }
+
+
+  .report-col{
+    position: absolute;right:10px;top:10px;
+  }
+  .report-col button{
+    background: #fff;    border-radius: 30px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    color: #0099cc;
+  }
+  .report-col button i{
+    background: #0099cc;
+    border-radius: 50%;
+    padding: 4px;
+    float: left;
+    margin-right: 9px;color:#fff;
+  }
+  
+
+  .smart-title h3{
+font-size: 18px;
+position: relative;
+padding: 5% 0;
+  }
+  .smart-title i{
+      float: right;
+      background: #0099cc;
+      border-radius: 50%;
+      padding: 9px;
+      color: #fff;
+position: absolute;top:38%; 
+right: 11px; 
+  }
+
+  .table1{
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5%;
+  }
