@@ -1,1 +1,237 @@
-<p>create-step1 works!</p>
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Smart Templates /</li>
+      <li><a href="">All  </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Create Smart Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save" type="button"><i  class="fa fa-question" ></i> View History</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-smart-sidebar></app-smart-sidebar>
+    </div>
+    <!--right_container-->
+
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+
+      <div class="col-12 smart-title">
+        <h3 style="    color: #000;
+            font-weight: 500;text-transform: uppercase;">anyone can build an smart template
+          <p style="    text-transform: capitalize;
+            color: gray;
+            font-size: 13px;margin-top: 3px;    ">Watch how to create an smart Template</p>
+
+        </h3>
+
+        <i class="fa fa-close"></i>
+      </div>
+
+      <div class="col-12 tablist table1">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <ul class="">
+              <li class="is-active">
+                <a data-toggle="tab" href="#home">
+                  <p class="num">1</p>
+                  <p class="numtext num1">
+                    Select a Published Template
+                  </p>
+                  <!-- <label for="tab">
+                          <span>1</span> <br/>
+
+                            <span>Select a Published Template</span></label> -->
+                </a>
+              </li>
+              <li class="is-active">
+                <a data-toggle="tab" href="#menu1" data-toggle="tab">
+                  <p class="num">2</p>
+                  <p class="numtext num2">
+                    Smart Clause
+                  </p>
+                  <!-- <label for="tab">
+                    <span>1</span> <br/>
+
+                      <span>Smart Clause</span></label> -->
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu2"  data-toggle="tab">
+                  <p class="num">3</p>
+                  <p class="numtext num3">
+                    Smart Field
+                  </p>
+                  <!-- <label for="tab">
+                      <span>1</span> <br/>
+
+                        <span>Smart Fields</span></label> -->
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-1 info">
+            <i class="fa fa-info"></i>
+
+          </div>
+          <div class="col-12 col-lg-2 pg">
+
+            <div class="progress">
+              <div class="progress-bar" style="width:14%">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal-body">
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active  show">
+
+            <div class="row">
+
+              <div>
+                <h3 class="lefttitletop" style="color:#000;"> STEP1 - NAME YOUR SMART TEMPLATE</h3>
+              </div>
+              <div class="col-12 col-lg-8">
+
+
+                <h3 class="leftttile">TEMPLATE</h3>
+                <div class="table-responsive ">
+                  <table class="table table-bordered">
+                    <!-- <thead>
+                                  <tr>
+                                        <th>name</th>
+                                        <th>type </th>
+                                        <th>type </th>
+                                        <th>created by</th>
+                                        <th>related template</th>
+                                        <th>status</th>
+                                        <th>current business owner</th>
+                                        <th>description</th>
+                                  </tr>
+                                </thead> -->
+                    <tbody>
+                      <tr>
+                        <td>Name</td>
+                        <td>Type</td>
+                        <td>Created by</td>
+                        <td>Description</td>
+                      </tr>
+                      <tr>
+                        <td>Agency_MUR_35_ST</td>
+                        <td>Home Loan</td>
+                        <td>Marie white</td>
+                        <td>Smart Template for Home Loan</td>
+                      </tr>
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="leftcontent">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s,
+                  </p>
+                  <p>
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="col-12 col-lg-4">
+                <h3 class="leftttile">SMART TEMPLATE</h3>
+                <form action="" class="rightform">
+                  <div class="form-group">
+                    <label for="">First Name:</label>
+                    <input type="text" class="form-control" id="">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Version:</label>
+                    <input type="text" class="form-control" id="">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Type:</label>
+                    <select class="form-control" id="sel1">
+                        <option>Home Loan</option>
+                        <option>Home Loan</option>
+                        <option>Home Loan</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Version:</label>
+                    <textarea name="" id="" cols="33" rows="5" placeholder=""></textarea>
+                  </div>
+
+
+
+                </form>
+              </div>
+
+
+
+              <div class="col-12 tempbtn">
+                <ul>
+                  <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> close</button></li>
+                  <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> save</button></li>
+
+                  <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i>next</button></li>
+
+                </ul>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div id="menu1" class="tab-pane fade ">
+              
+              <app-create-step2></app-create-step2>
+          </div>
+
+          <div id="menu2" class="tab-pane fade ">
+              
+              <app-create-step3></app-create-step3>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+  </div>
