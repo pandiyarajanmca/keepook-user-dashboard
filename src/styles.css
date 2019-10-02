@@ -2056,3 +2056,7 @@ input:checked + .slider:before {
   margin-top: 25px
   
 }
+.tempform .formdiv{
+  margin-bottom: 24px;
+  padding-left: 3%;
+}

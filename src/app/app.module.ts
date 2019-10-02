@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TemplateManagementModule } from './template-management/template-management.module';
-import { TechnicalSettingsModule } from './technical-settings/technical-settings.module';
+import { TasksModule } from './tasks/tasks.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { SmartTemplateModule } from './smart-template/smart-template.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { WorkflowManagementModule } from './workflow-management/workflow-management.module';
 import { ReportingComponent } from './reporting/reporting.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './_serives/auth.service';
@@ -21,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpService} from './_serives/http.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AccessService } from './_serives/access.service';
+import { ContractsModule } from './contracts/contracts.module';
 
 @NgModule({
   declarations: [
@@ -29,15 +29,16 @@ import { AccessService } from './_serives/access.service';
     FooterComponent,
     ReportingComponent,    
     LoginComponent,
-    ChartComponent 
+    ChartComponent ,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TemplateManagementModule,
-    TechnicalSettingsModule,
+    ContractsModule, 
     SmartTemplateModule,
-    WorkflowManagementModule,
+    
     FormsModule, 
     ReactiveFormsModule,
     CommonModulesModule,
@@ -45,6 +46,7 @@ import { AccessService } from './_serives/access.service';
     BrowserAnimationsModule,
     ToastrModule.forRoot({ positionClass: 'toast-bottom-right' }),
     NgbModule,
+    TasksModule
      
 
   ],
