@@ -78,13 +78,13 @@
   </div>
 </header>
 <!--END-header-->
-<div class="row newheader">
+<div class="row newheader"  *ngIf="isLoggedIn$|async as isLoggedIn" >
   <div class="container-fluid">
 
     <div class="row" style="display:block;">
       <div class="col-12" style="padding: 0;">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-          <div class="col-lg-3">
+          <div class="col-9 col-sm-3 col-lg-3">
             <a class="navbar-brand" href="#">
                                 <img  alt="" class="img-fluid" src="assets/images/logo.png">
                             </a>
@@ -93,7 +93,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-          <div class="col-lg-9">
+          <div class=" col-3 col-sm-9 col-lg-9">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -127,10 +127,10 @@
                                                 width: 22px;
                                                 font-size: 12px;
                                                 height: 22px;
-                                                line-height: 24px;">5</span>
+                                                line-height: 24px;text-align:center;">5</span>
                                             </i>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item droplist">
 
                   <div class="dropdown ">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -176,8 +176,68 @@
 
 </div>
 
+<div class="row list-row" *ngIf="isLoggedIn$|async as isLoggedIn"> 
+<div class="container">
+<div class="row">
+<ul>
+  <li>
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/dashboard']">
+      <img src="assets/images/dashboard_icon.png" alt="" class="b_img1">
+      <img src="assets/images/dashboard_icon_w.png" alt="" class="w_img1">
+      <span>Dashboard</span> </a>
+  </li>
+  <li class="">
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/template-management']">
+                    <img src="assets/images/template-ts-black.png" alt="" class="b_img1">
+                    <img src="assets/images/template-ts.png" alt="" class="w_img1">
+                    <span>Template</span></a>
+  </li>
+  <li class="">
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/smart-template']">
+                    <img src="assets/images/access_icon.png" alt="" class="b_img1">
+                    <img src="assets/images/access_icon_w.png" alt="" class="w_img1">
+                    <span>Smart Template</span></a>
+  </li>
+  <li class="">
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/workflow-management']">
+                    <img src="assets/images/workflow_icon.png" alt="" class="b_img1">
+                    <img src="assets/images/workflow_icon_w.png" alt="" class="w_img1">
+                    <!-- <span>Workflows, Contracts</span> -->
+                    <span> Contracts</span>
+                </a>
+  </li>
+  <li class="">
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/technical-settings']">
+                    <img src="assets/images/setting_icon.png" alt="" class="b_img1">
+                    <img src="assets/images/setting_icon_w.png" alt="" class="w_img1">
+                    <span> Tasks</span></a>
+    <!-- <span>Technical Settings, Tasks</span></a> -->
+  </li>
+  <li class="">
+    <a class="" [routerLinkActive]="['active']" [routerLink]="['/reporting']">
+                    <img src="assets/images/report_icon.png" alt="" class="b_img1">
+                    <img src="assets/images/report_icon_w.png" alt="" class="w_img1">
+                    <span>Reporting</span>
+                </a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <div class="menu-row row"> -->
-<div class="menu-row row" *ngIf="isLoggedIn$|async as isLoggedIn">
+<div class="menu-row row"   style="display:none;" *ngIf="isLoggedIn$|async as isLoggedIn">
   <div class="container">
     <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
