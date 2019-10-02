@@ -561,17 +561,36 @@ margin-bottom: 0;
 position: relative;
 }
 .treelist ul::before{
-  
+  position: absolute;
+  content:'';
+  left: 44px;width: 1px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #333;
 }
 .treelist ul li{
-  
+position: relative;
 }
+.treelist ul li::before{
+  position: absolute;
+  content:'';
+  left: 45px;width: 10px;
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #333;
+}
+
+
 .treelist ul li button{
   outline: none;
   box-shadow: none;
 }
 .treelist ul li  button i{
-margin-right: 5px;
+margin-right: 27px;
 color:#0099cc;
 font-size: 20px;
 
