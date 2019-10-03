@@ -162,6 +162,8 @@ th{
     margin-top: 5%;
     padding-top: 4%;
     padding-bottom: 4%;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .tempbtn ul{
@@ -169,11 +171,12 @@ th{
   }
   .tempbtn ul li{
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 4px;
   }
   .tempbtn ul li button{
     border-radius: 30px;
     padding: 9px 12px;
+    padding: 9px 7px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
@@ -391,12 +394,15 @@ th{
     float: left;
     margin-right: 9px;color:#fff;
   }
-  
+  .smart-title{
+    padding-left: 0;
+  }
 
   .smart-title h3{
 font-size: 18px;
 position: relative;
 padding: 5% 0;
+padding-bottom: 2%;
   }
   .smart-title i{
       float: right;
@@ -411,4 +417,47 @@ right: 11px;
   .table1{
     border-bottom: 2px solid #ccc;
     padding-bottom: 5%;
+  }
+  
+
+.treelist{
+  
+  }
+  .treelist ul{
+  position: relative;
+  }
+  .treelist ul::before{
+    position: absolute;
+    content:'';
+    left: 0;width: 1px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #333;
+  }
+  .treelist ul li{
+  position: relative;
+  }
+  .treelist ul li::before{
+    position: absolute;
+    content:'';
+    left: 0;width: 10px;
+    height: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #333;
+  }
+  
+  
+  .treelist ul li button{
+    outline: none;
+    box-shadow: none;
+  }
+  .treelist ul li  button i{
+  margin-left:6px;
+  color:#0099cc;
+  font-size: 20px;
+  
   }

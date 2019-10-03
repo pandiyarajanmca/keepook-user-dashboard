@@ -158,10 +158,11 @@ th{
   }
   .tempbtn{
     text-align: center;
-    display: block;    border-top: 2px solid #ccc;
+    display: block;   
+     /* border-top: 2px solid #ccc;
     margin-top: 5%;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 4%; */
   }
   
   .tempbtn ul{
@@ -372,4 +373,14 @@ th{
   }
   .tablebottom{
     margin-bottom: 4%;
+  }
+
+  .formdivpop{
+    margin-bottom: 20px;
+  }
+  .formdivpop select{
+    padding: .375rem 0;width: 100%;
+  }
+  .formdivpop .formdiv{
+      padding: 0;
   }

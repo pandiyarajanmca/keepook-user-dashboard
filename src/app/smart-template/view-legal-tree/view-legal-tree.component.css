@@ -563,7 +563,7 @@ position: relative;
 .treelist ul::before{
   position: absolute;
   content:'';
-  left: 44px;width: 1px;
+  left: 0;width: 1px;
   height: 100%;
   top: 0;
   bottom: 0;
@@ -576,7 +576,7 @@ position: relative;
 .treelist ul li::before{
   position: absolute;
   content:'';
-  left: 45px;width: 10px;
+  left: 0;width: 10px;
   height: 1px;
   top: 0;
   bottom: 0;
@@ -590,7 +590,7 @@ position: relative;
   box-shadow: none;
 }
 .treelist ul li  button i{
-margin-right: 27px;
+margin-left:6px;
 color:#0099cc;
 font-size: 20px;
 

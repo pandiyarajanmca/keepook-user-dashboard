@@ -164,7 +164,12 @@ th{
     padding-top: 4%;
     padding-bottom: 4%; */
   }
-  
+  .tempbtn1{
+    border-top: 2px solid #ccc;
+    margin-top: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
   .tempbtn ul{
     padding: 0;
   }
@@ -545,4 +550,15 @@ display: inline-block;display: table-cell;
 
 .modal-body{
   padding: 0;
+}
+
+
+.formdivpop{
+  margin-bottom: 20px;
+}
+.formdivpop select{
+  padding: .375rem 0;width: 100%;
+}
+.formdivpop .formdiv{
+    padding: 0;
 }
