@@ -77,7 +77,10 @@
 .uploadfile1 input[type="file"] {
     display: none;
 }
-
+.uploadfile1{
+    /* position: absolute;
+    right: 18%; */
+}
 .formdiv label{
     font-weight: 500;
 }
@@ -139,147 +142,28 @@
     float: left;
     margin-right: 9px;color:#fff;
 }
-.search-box-container input {
-    padding: 5px 20px 5px 5px;
-   
+
+
+.editbtnlist {
+    padding: 0;
+    margin-bottom: 0;
   }
-  
-  .search-box-container:after {
-      content: "\f002";
-      font-family: FontAwesome;
-      /* margin-left: -25px;
-      margin-right: 25px; */
-  }
-  table.table thead th{
-      font-size: 15px;
-  }
-  .search-box-container:after {
-    content: "\f002";
-    font-family: FontAwesome;
- position: absolute;
- right: -40px;
- top: 7px;
-}
-
-
-
-.modal-body{
-    padding-bottom: 6%;
-}
-.modal-body label{
-    text-align: left;
-    float: left;
-}
-.modal-body .col{
-   margin-bottom: 19px;
-}
-.modal-footer{
-    border-top: 1px solid #b8b8b8;
-}
-.tfooter_btn_col{
-    border-top:none;
-}
-
-.modal-header{
-    background: #f6f6f6;text-transform: uppercase;
-}
-
-
-
-/* ------------------------------------------------------- new ---------------------- */
-
-.title{
-    background: #0099cc;
-    padding: 10px;
-}
-h3{
-    font-size: 20px;
-    margin: 0;
-    font-weight: 500;
-    color: #fff;
-}
-tr{
-    border-bottom: 1px solid #898989 !important;
-}
-tbody{
-    border-left: 1px solid #898989;
-}
-th{
-    text-transform: uppercase;
-}[data-toggle="collapse"] .fa:before {  
-    content: "\f139";
-  }
-  
-  [data-toggle="collapse"].collapsed .fa:before {
-    content: "\f13a";
-  }
-.leftbtn{
-    width: 100%;
-    background: #612683;
-    border-radius: 0;
-    border: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 500;
-    outline: none !important;
-}  
-.leftbtnlist img{
-    width: 18px;margin-right: 10px;
-}
-.leftbtnlist li a{
-    color: #495057;    font-size: 14px;
-    padding: 11px 6px;
-}
-.toptabel{
-    border: 1px solid #898989 ;
-    margin-bottom: 0 ;
-    padding: 1% 1%;
-}
-.toptabel li{
+  .editbtnlist li{
     display: inline-block;
-}
-.toptabel li p input{
-    width: 74%;
-    float: right;
+  }
+  .preview button{
+    background: #f6f6f6;
+    display: table;
+    color: #000;
+    border: 1px solid #333;
+    border-radius: 6px;
+    margin-bottom: 0;
+    padding: 7px 10px;
     position: relative;
-}
-.toptabel li p input::after{
-    content: "\f002";
-    font-family: FontAwesome;
-    position: absolute;
-    right: 0;
-    top: 7px;
-    margin-right: 5px;
-}
-.toptabel li p select{
-    width:35%;
-    float: right;
-}
-.toplabel1{width: 35% !important;
-}
-.toplabel2{width: 35% !important;
-    margin-left: 
-    2%;
-}
-.toplabel3{width: 20% !important;
-}
-.search-icon{
-    position: relative;
-}
-.search-icon:after {
-    content: "\f002";
-    font-family: FontAwesome;
-    position: absolute;
-    left:93%;
-    top: 7px;
-}
-.float{
-    float: right;
-}
-.tempform {
-    margin-bottom: 24px;
-    padding-left: 3%;
-}
-.topm{
-    margin-top: 13px;
-}
+    top: -15px;
+  }
+
+
+  .tempform{
+      padding-top: 4%;
+  }

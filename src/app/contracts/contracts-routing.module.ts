@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: '', component: LandingPageComponent },
   {path:'user-all-contracts', component:UserAllContractsComponent},
   {path:'add-contracts', component:AddContractsComponent},
-  {path:'edit-contracts', component:EditContractsComponent}
+  {path:'edit-contracts', component:EditContractsComponent},
+  {path:'all-contracts', component:UserAllContractsComponent},
 ];
 
 @NgModule({
