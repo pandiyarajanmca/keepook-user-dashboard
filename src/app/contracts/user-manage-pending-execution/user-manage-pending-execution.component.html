@@ -1,1 +1,227 @@
-<p>user-manage-pending-execution works!</p>
+<div class="container">
+        <div class="row temptoplist">
+          <ul class="">
+            <li>
+              <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+            </li>
+            <li>Templates /</li>
+            <li><a href="">All Template </a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-12  temptitle">
+            <h3>Edit All Template</h3>
+        
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-3 left_sidebar p-0">
+                <app-contracts-sidebar></app-contracts-sidebar>
+          </div>
+          <!--right_container-->
+
+          <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+                <ul class="toptabel">
+                  <li class="toplabel1">
+        
+                    <p class="search-icon">Search : <input class="form-control" id="myInput" type="text" placeholder="Type to filter...">
+                    </p>
+                  </li>
+                  <li class="toplabel2">
+                        <div class=" module-col">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> <i  class="fa fa-filter" style="margin-right: 5px;"></i> Advance Filter</button>
+                                <!-- Popup Modal -->
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header" style="    background: #f8f8f8;">
+                                          <h4 class="modal-title" style="font-size:17px;text-transform: uppercase;"><i style="font-size:23px;" class="fa fa-filter" style="margin-right: 5px;"></i> Advance Filter</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          <form action="">
+                                            <div class="row formdivpop">
+                                              <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                  <label for="">Contract ID</label>
+                                                </div>
+                                                <div class="col-12">
+                                                  <select name="">
+                                                                    <option  value="" >All</option>
+                                                                    <option  value="" >10</option>
+                                                                  </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                  <label for="">Date of Creation</label>
+                                                </div>
+                                                <div class="col-12">
+                                                  <input type="date" class="form-control" id="" name="">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row formdivpop">
+                                              <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                  <label for="">Assigned By</label>
+                                                </div>
+                                                <div class="col-12">
+                                                        <select name="">
+                                                                <option  value="" >All</option>
+                                                                <option  value="" >10</option>
+                                                              </select>
+                                                </div>
+                                              </div>
+                                              <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                  <label for="">Due Date</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="date" class="form-control" id="" name="">
+                                                </div>
+                                              </div>
+                                            </div>
+                        
+                        
+                                            <div class="row formdivpop">
+                                                    <div class="col-lg-6 formdiv">
+                                                      <div class="col-12">
+                                                        <label for="">Current Business Owner</label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                              <select name="" style="width:100%;">
+                                                                      <option  value="" >All</option>
+                                                                      <option  value="" >10</option>
+                                                                    </select>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-lg-6 formdiv">
+                                                      <div class="col-12">
+                                                        <label for="">Priority </label>
+                                                      </div>
+                                                      <div class="col-12">
+                                                              <select name="" style="width:100%;">
+                                                                      <option  value="" >All</option>
+                                                                      <option  value="" >10</option>
+                                                                    </select>
+                                                      </div>
+                                                    </div>
+                                                    
+                                                  </div>
+                        
+                                        
+                                          </form>
+                                        </div>
+                        
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                          <div class="col-12 tempbtn">
+                                            <ul>
+                                              <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+                                              <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> apply</button></li>
+                                            </ul>
+                                          </div>
+                        
+                                          <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+                                        </div>
+                        
+                                      </div>
+                                    </div>
+                                  </div>
+            
+                                  
+                                <!-- End popup modal -->
+                              </div>
+                  </li>
+                  <li class="toplabel3">
+        
+                    <p>Show Per Page :
+        
+                      <select name="">
+                          <option  value="" >All</option>
+                          <option  value="" >10</option>
+                        </select>
+                    </p>
+                  </li>
+                </ul>
+        
+        
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                            <th>contract id</th>
+                            <th>date of creation </th>
+                            <th>assigned by </th>
+                            <th>due date </th>
+                            <th>due (in days)</th>
+                            <th>current business owner</th>
+                            <th>priority</th>
+                            <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                            <td>#4545</td>
+                            <td>11.10.2017</td>                            
+                            <td >Jhon Doe</td>
+                            <td>11.10.2018</td>
+                            <td>20</td>
+                            <td>Supervisor</td>
+                            <td class="bg-danger" style="color:#fff;"> High</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                      </tr>
+                      <tr>
+                            <td>#4545</td>
+                            <td>11.10.2017</td>                            
+                            <td >Jhon Doe</td>
+                            <td>11.10.2018</td>
+                            <td>20</td>
+                            <td>Supervisor</td>
+                            <td class="bg-danger" style="color:#fff;"> High</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                      </tr>
+                      <tr>
+                            <td>#4545</td>
+                            <td>11.10.2017</td>                            
+                            <td >Jhon Doe</td>
+                            <td>11.10.2018</td>
+                            <td>20</td>
+                            <td>Supervisor</td>
+                            <td class="bg-warning" style="color:#fff;"> Medium</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                      </tr>
+                      <tr>
+                            <td>#4545</td>
+                            <td>11.10.2017</td>                            
+                            <td >Jhon Doe</td>
+                            <td>11.10.2018</td>
+                            <td>20</td>
+                            <td>Supervisor</td>
+                            <td class="bg-success" style="color:#fff;"> Low</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                      </tr>
+                      <tr>
+                            <td>#4545</td>
+                            <td>11.10.2017</td>                            
+                            <td >Jhon Doe</td>
+                            <td>11.10.2018</td>
+                            <td>20</td>
+                            <td>Supervisor</td>
+                            <td class="bg-success" style="color:#fff;"> Low</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+      
+      </div>
+
+
+      
