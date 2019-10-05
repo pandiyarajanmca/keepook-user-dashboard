@@ -1,0 +1,238 @@
+<div class="container">
+    <div class="row temptoplist">
+        <ul class="">
+            <li>
+                <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i>
+                    Back</button>
+            </li>
+            <li>Templates /</li>
+            <li>Edit /</li>
+            <li><a href="">Delegated </a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-12  temptitle">
+            <h3>Edit Templates</h3>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-3 left_sidebar p-0">
+            <app-contracts-sidebar></app-contracts-sidebar>
+        </div>
+        <!--right_container-->
+
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+            <ul class="toptabel">
+                <li class="toplabel1">
+
+                    <p class="search-icon">Search : <input class="form-control" id="myInput" type="text"
+                            placeholder="Type to filter...">
+                    </p>
+                </li>
+                <li class="toplabel2">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> <i
+                            class="fa fa-filter" style="margin-right: 5px;"></i> Advance Filter</button>
+
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header" style="    background: #f8f8f8;">
+                                    <h4 class="modal-title" style="font-size:17px;text-transform: uppercase;"><i
+                                            style="font-size:23px;" class="fa fa-filter" style="margin-right: 5px;"></i>
+                                        Advance Filter</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="row formdivpop">
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for="">Contract Id</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select name="" style="width:100%;">
+                                                        <option value="">All</option>
+                                                        <option value="">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for="">File Name</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="" name=""
+                                                        placeholder="search">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row formdivpop">
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for="">Date of Creation</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="date" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for="">Delegated To</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row formdivpop">
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for="">Due Date </label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="date" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 formdiv">
+                                                <div class="col-12">
+                                                    <label for=""> Current Business Owner</label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" id="" name="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <div class="tfooter_btn_col p-3 ">
+                                        <div class="row padding">
+                                            <div class="col" style="text-align:left;">
+                                                <button type="button" class="btn btn-cancel"><i class="fa fa-close"
+                                                        style="float:left"></i>
+                                                    CANCEL</button>
+                                            </div>
+
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-preview" style="float: right"><i
+                                                        class="fa fa-check"></i>
+                                                    APPLY</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </li>
+                <li class="toplabel3">
+
+                    <p>Show Per Page :
+
+                        <select name="">
+                            <option value="">All</option>
+                            <option value="">10</option>
+                        </select>
+                    </p>
+                </li>
+            </ul>
+
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>contracts id</th>
+                            <th>file name </th>
+                            <th>date of creation</th>
+                            <th>delegated to</th>
+                            <th>due date</th>
+                            <th>current business <br>owner</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>11.10.2017</td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-trash" style="font-size:24px"></i>
+                                <i class="fa fa-eye" style="font-size:30px"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>122</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>11.10.2017</td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-trash" style="font-size:24px"></i>
+                                <i class="fa fa-eye" style="font-size:30px"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>134</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>11.10.2017</td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-trash" style="font-size:24px"></i>
+                                <i class="fa fa-eye" style="font-size:30px"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>234</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>11.10.2017</td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-trash" style="font-size:24px"></i>
+                                <i class="fa fa-eye" style="font-size:30px"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>789</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>11.10.2017</td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-trash" style="font-size:24px"></i>
+                                <i class="fa fa-eye" style="font-size:30px"></i>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>

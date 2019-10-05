@@ -24,18 +24,28 @@
         <!--right_container-->
         <div class="col-12 col-lg-9 right_container">
             <div class="data_inner row-div">
-                <div class="table-form">
-
+                <div class="row">
+                    <div class="col-sm-9" style="text-align:right;">
+                        <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
+                    </div>
+                    <div class="col-sm-2" style="width: 50%;position: relative;top: 5px;padding:0;">
+                        <select name="" style="width: 75%;" (change)="navigateTo($event.target.value)">
+                            <option value="AllUserEdit">All-User-Edit</option>
+                            <option value="EditExecuted">Edit-Executed</option>
+                            <option value="EditPendingExecuted">Edit-Pending Executed</option>
+                            <option value="EditDelegated">
+                                Edit-Delegated</option>
+                        </select>
+                    </div>
                 </div>
-
-                <div class="data_inner row-div">
+                <div class="data_inner row-div ">
                     <div class="table-form col-12"
                         style="border: 1px black solid; border-bottom: 2px #663399 solid; padding: 10px;">
 
 
 
                         <!-- new table top -->
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-sm-3">
                                 <div class="row">
                                     <div class="col-sm-3">

@@ -2042,8 +2042,7 @@ input:checked + .slider:before {
     text-align: center;
     font-size: 20px;
 }
-.glyphstep i {
-}
+
 .glyphcomplete {
     border: 2px solid lightgreen !important;
     color: lightgreen;
@@ -2060,3 +2059,6 @@ input:checked + .slider:before {
   margin-bottom: 24px;
   padding-left: 3%;
 }
+
+/* ---------------------------------------- */
+
