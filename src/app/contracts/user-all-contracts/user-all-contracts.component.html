@@ -5,16 +5,14 @@
                 <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i>
                     Back</button>
             </li>
-            <li>Contracts /</li>
-            <li><a href="">All </a></li>
+            <li>Templates /</li>
+            <li><a href="">All Template </a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-12  temptitle">
             <h3>Edit All Template</h3>
-            <div class="report-col">
-                <button class="btn btn-save" type="button"><i class="fa fa-question"></i> Help</button>
-            </div>
+
         </div>
     </div>
     <div class="row">
@@ -22,276 +20,209 @@
             <app-contracts-sidebar></app-contracts-sidebar>
         </div>
         <!--right_container-->
-        <div class="col-12 col-lg-9 right_container">
-            <div class="data_inner row-div">
-                <div class="row">
-                    <div class="col-sm-9" style="text-align:right;">
-                        <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
-                    </div>
-                    <div class="col-sm-2" style="width: 50%;position: relative;top: 5px;padding:0;">
-                        <select name="" style="width: 75%;" (change)="navigateTo($event.target.value)">
-                            <option value="AllUserEdit">All-User-Edit</option>
-                            <option value="EditExecuted">Edit-Executed</option>
-                            <option value="EditPendingExecuted">Edit-Pending Executed</option>
-                            <option value="EditDelegated">
-                                Edit-Delegated</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="data_inner row-div ">
-                    <div class="table-form col-12"
-                        style="border: 1px black solid; border-bottom: 2px #663399 solid; padding: 10px;">
 
+        <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+            <ul class="toptabel">
+                <li class="toplabel1">
 
-
-                        <!-- new table top -->
-                        <div class="row ">
-                            <div class="col-sm-3">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <label for="Student" style="    padding-top: 6px;">Search:</label>
+                    <p class="search-icon">Search : <input class="form-control" id="myInput" type="text"
+                            placeholder="Type to filter...">
+                    </p>
+                </li>
+                <li class="toplabel2">
+                    <div class=" module-col">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> <i
+                                class="fa fa-filter" style="margin-right: 5px;"></i> Advance Filter</button>
+                        <!-- Popup Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header" style="    background: #f8f8f8;">
+                                        <h4 class="modal-title" style="font-size:17px;text-transform: uppercase;"><i
+                                                style="font-size:23px;" class="fa fa-filter"
+                                                style="margin-right: 5px;"></i> Advance Filter</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <div class="col-sm-9 search-box-container search-box-container-new">
-                                        <input type="text" placeholder="Type to filter" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 text-center">
-                                <div class=" module-col">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#myModal" style="padding-top: 3px;padding-bottom: 3px;"><i
-                                            class="fa fa-filter" style="margin-right: 5px;">Advance Filter</i></button>
-                                    <!-- Popup Modal -->
-                                    <div class="modal fade" id="myModal">
-                                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                                            <div class="modal-content">
-
-                                                <!-- Modal Header -->
-                                                <div class="modal-header">
-                                                    <h5 style="margin-bottom: 0;"><i class="fa fa-filter"
-                                                            style="margin-right: 5px;"></i>Advance Filter
-                                                    </h5>
-                                                    <button type="button" class="close"
-                                                        data-dismiss="modal">&times;</button>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="row formdivpop">
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">Type</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <select name="">
+                                                            <option value="">All</option>
+                                                            <option value="">10</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-
-                                                <!-- Modal body -->
-                                                <div class="modal-body">
-
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <label>Type</label>
-                                                            <select class="form-control">
-                                                                <option>ALL</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="exampleFormControlInput1">Published
-                                                                Template</label>
-                                                            <input type="email" class="form-control"
-                                                                id="exampleFormControlInput1" placeholder="search">
-                                                        </div>
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">File Name</label>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <label>Smart Template</label>
-                                                            <select class="form-control">
-                                                                <option>ALL</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="date-picker-example">Date of Creation</label>
-                                                            <input placeholder="Selected date" type="text"
-                                                                id="date-picker-example"
-                                                                class="form-control datepicker">
-
-
-                                                        </div>
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" id="" name="">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <label>Created By</label>
-                                                            <select class="form-control">
-                                                                <option>ALL</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col">
-                                                            <label>Status</label>
-                                                            <select class="form-control">
-                                                                <option>ALL</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
                                                 </div>
+                                            </div>
+                                            <div class="row formdivpop">
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">created By</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" id="" name="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">Date of Creation</label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <input type="date" class="form-control" id="" name="">
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                                <!-- Modal footer -->
-                                                <div class="modal-footer">
-                                                    <div class="tfooter_btn_col p-3 ">
-                                                        <div class="row padding">
-                                                            <div class="col" style="text-align:left;">
-                                                                <button type="button" class="btn btn-cancel"><i
-                                                                        class="fa fa-close" style="float:left"></i>
-                                                                    CANCEL</button>
-                                                            </div>
 
-                                                            <div class="col">
-                                                                <button type="submit" class="btn btn-preview"
-                                                                    style="float: right"><i class="fa fa-check"></i>
-                                                                    APPLY</button>
-                                                            </div>
-                                                        </div>
+                                            <div class="row formdivpop">
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">Created By </label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <select name="" style="width:100%;">
+                                                            <option value="">All</option>
+                                                            <option value="">10</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 formdiv">
+                                                    <div class="col-12">
+                                                        <label for="">Smart Template </label>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <select name="" style="width:100%;">
+                                                            <option value="">All</option>
+                                                            <option value="">10</option>
+                                                        </select>
                                                     </div>
                                                 </div>
 
                                             </div>
+
+
+                                        </form>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <div class="col-12 tempbtn">
+                                            <ul>
+                                                <li> <button type="button" class="btn btn-secondary"><i
+                                                            class="fa fa-close"></i> cancel</button></li>
+                                                <li> <button type="button" class="btn btn-primary"><i
+                                                            class="fa fa-close"></i> apply</button></li>
+                                            </ul>
                                         </div>
+
+                                        <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
                                     </div>
-                                    <!-- End popup modal -->
+
                                 </div>
                             </div>
-
-                            <div class="col-sm-5">
-                                <div class="row">
-                                    <div class="col-sm-9" style="text-align:right;">
-                                        <label for="Student" style="    padding-top: 6px;">Show Per Page :</label>
-                                    </div>
-                                    <div class="col-sm-2" style="    width: 50%;
-                                        position: relative;
-                                        top: 5px;padding:0;">
-                                        <select name="" style="width: 75%;">
-                                            <option value="">All</option>
-                                            <option value="">10</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+
+                        <!-- End popup modal -->
                     </div>
-                    <div class="table-resposive" style="padding-bottom:8px;">
-                        <table class="w-100 table table-bordered">
+                </li>
+                <li class="toplabel3">
 
-                            <thead>
+                    <p>Show Per Page :
 
-                                <tr>
-                                    <th>TYPE</th>
-                                    <th>FILE NAME </th>
-                                    <th> CREATED BY</th>
-                                    <th>DATE OF CREATION</th>
-                                    <th>STATUS</th>
-                                    <th>ASSOCIATED SMART<br> TEMPLATE </th>
-
-                                    <th>CURRENT <br>BUSINESS <br>OWNER</th>
-                                    <th>ACTION</th>
-
-                                </tr>
-                            </thead>
+                        <select name="">
+                            <option value="">All</option>
+                            <option value="">10</option>
+                        </select>
+                    </p>
+                </li>
+            </ul>
 
 
-                            <tbody>
-                                <tr class="table-bordered">
-                                    <td>MUR</td>
-                                    <td class="text-primary"> 2018_ask_01</td>
-                                    <td> jhon 1</td>
-                                    <td> 10-10-2016</td>
-                                    <td style="background-color: green;color: #fff">Executed</td>
-                                    <td>sample text</td>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>type</th>
+                            <th>file name </th>
+                            <th>created by </th>
+                            <th>date of creation</th>
+                            <th>status</th>
+                            <th>associated smart template</th>
+                            <th>current business owner</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MUR</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td class="bg-success" style="color:#fff;"> Published</td>
+                            <td><a href="">MMFA_111_1C</a></td>
+                            <td>You</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                        </tr>
+                        <tr>
+                            <td>MUR</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td class="bg-warning" style="color:#fff;"> Pending Execution</td>
+                            <td><a href="">MMFA_111_1C</a></td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                        </tr>
+                        <tr>
+                            <td>MUR</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td class="bg-pending" style="color:#fff;background: yellow;"> Drafting</td>
+                            <td><a href="">MMFA_111_1C</a></td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                        </tr>
+                        <tr>
+                            <td>MUR</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td class="bg-dark" style="color:#fff;"> Delegated</td>
+                            <td><a href="">MMFA_111_1C</a></td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                        </tr>
 
-                                    <td>You</td>
-                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h"
-                                            style="font-size:24px"></i></td>
-                                </tr>
-                                <tr class="table-bordered">
-                                    <td>MUD</td>
-                                    <td class="text-primary"> 2018_ask_02</td>
-                                    <td> jhon 2</td>
-                                    <td> 12-04-2016</td>
-                                    <td style="background-color: red;color: #fff">Pending Execution</td>
-                                    <td>sample text</td>
-
-                                    <td>You</td>
-                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h"
-                                            style="font-size:24px"></i></td>
-                                </tr>
-                                <tr class="table-bordered">
-                                    <td>IJ</td>
-                                    <td class="text-primary"> 2018_ask_03</td>
-                                    <td> jhon 3</td>
-                                    <td> 14-09-2015</td>
-                                    <td style="background-color: red;color: #fff">Drafting</td>
-                                    <td>sample text</td>
-
-                                    <td>You</td>
-                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h"
-                                            style="font-size:24px"></i></td>
-                                </tr>
-
-                                <tr class="table-bordered">
-                                    <td>IJ</td>
-                                    <td class="text-primary"> 2018_ask_04</td>
-                                    <td> jhon 4</td>
-                                    <td> 30-09-2017</td>
-                                    <td style="background-color: red;color: #fff">Delegated</td>
-                                    <td>sample text</td>
-
-                                    <td>You</td>
-                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h"
-                                            style="font-size:24px"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>IST</td>
-                                    <td class="text-primary"> 2018_ask_05</td>
-                                    <td> jhon5</td>
-                                    <td> 12-09-2018</td>
-                                    <td style="background-color: black;color: #fff">Expiring in<br> x days</td>
-                                    <td>sample text</td>
-
-                                    <td>You</td>
-                                    <td style="text-align:center;"><i class="fa fa-ellipsis-h"
-                                            style="font-size:24px"></i></td>
-
-                                </tr>
-
-                                <!-- <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                 <td class="tfooter_btn_col"><button class="float-none btn btn-save" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> EDIT</button></td>
-                            </tr>
-                            <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td class="tfooter_btn_col"><button class="float-none btn btn-save" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> EDIT</button></td>
-                            </tr> -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-            <!--/data-section-->
-            <div class="row float">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination pagination-md">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                        <tr>
+                            <td>MUR</td>
+                            <td><a href="">2018_MMFA_111</a></td>
+                            <td>Jhon Doe</td>
+                            <td>11.10.2017</td>
+                            <td class="bg-danger  " style="color:#fff;"> Expired in x days</td>
+                            <td><a href="">MMFA_111_1C</a></td>
+                            <td>Business Admin</td>
+                            <td><i class="fa fa-ellipsis-h" style="font-size:24px"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
+
     </div>
-</div>

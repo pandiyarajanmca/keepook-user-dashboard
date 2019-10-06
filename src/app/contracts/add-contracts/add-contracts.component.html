@@ -1,142 +1,143 @@
 <div class="container">
-    <div class="row temptoplist">
-        <ul class="">
-            <li>
-                <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i>
-                    Back</button>
-            </li>
-            <li>Contracts /</li>
-            <li><a href="">Create </a></li>
-        </ul>
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Contract /</li>
+      <li><a href="">Create </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Replace Existing Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save" type="button"><i class="fa fa-question"></i> Help</button>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-12  temptitle">
-            <h3>Edit All Template</h3>
-            <div class="report-col">
-                <button class="btn btn-save" type="button"><i class="fa fa-question"></i> Help</button>
-            </div>
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-contracts-sidebar></app-contracts-sidebar>
     </div>
-    <div class="row">
-        <div class="col-12 col-lg-3 left_sidebar p-0">
-            <app-contracts-sidebar></app-contracts-sidebar>
+    <!--right_container-->
+    <div class="col-12 col-lg-9 p-0">
+      <form action="" class="tempform tempform1">
+
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Source File </label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" name="">
+          </div>
+          <div class="col-lg-4">
+            <ul class="editbtnlist">
+              <li style="margin-right: 8px;">
+                <div class="uploadfile1">
+                  <label> <i class="fa fa-file"></i> Choose File <input type="file" size="60"></label>
+                </div>
+              </li>
+              <li>
+                <div class="preview">
+                  <button type="button" class="btn btn-light"><i class="fa fa-search"></i>Preview</button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!--right_container-->
-        <div class="col-12 col-lg-9 p-0 mt-3">
-            <form action="" class="tempform pt-3">
-                <div class="row ">
-                    <div class="col-lg-4">
-                        <label for="email">Document</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="">
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="uploadfile1">
-                            <label> <i class="fa fa-file"></i> Choose File <input type="file" size="60"></label>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="uploadfile1">
-                            <label> <i class="fa fa-search"></i> Preview <input type="file" size="60"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class='row topm'>
-                    <div class="col-lg-4">
-                        <label for="email">Select Smart Template</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <select class="form-control">
-                            <option>Murahabha</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="SEARCH BY KEY WORD">
-                    </div>
-                </div>
-                <div class='row topm'>
-                    <div class="col-lg-4">
-                        <label for="email">Select a WorkFlow</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <select class="form-control">
-                            <option>Murahabha Borrowing</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email">Ref #</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="1.0.0">
-                    </div>
-
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email">Contract Name</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="HUOI">
-                    </div>
-
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email"> Version Name</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="1.0.0">
-                    </div>
-
-                </div>
-                <div class="row topm">
-                    <div class="col-lg-4">
-                        <label>Comments</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <textarea name="" id="" cols="38" rows="5"></textarea>
-                    </div>
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email"> Creation Date</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="1.0.0">
-                    </div>
-
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email"> Expiration Date</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="1.0.0">
-                    </div>
-
-                </div>
-                <div class="row topm ">
-                    <div class="col-lg-4">
-                        <label for="email"> Send to mail</label>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" class="form-control" id="" name="" placeholder="1.0.0">
-                    </div>
-
-                </div>
-                <div class="col-12 tempbtn p-2">
-                    <button type="button" class="btn btn-cancel" data-dismiss="modal"><i class="fa fa-close"></i>
-                        Cancel</button>
-                    <button type="submit" class="btn btn-save"><i class="fa fa-check"></i> Save</button>
-                </div>
-
-            </form>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Select Smart Template</label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <br>
+            <input type="text" class="form-control" id="" name="">
+          </div>
         </div>
 
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Select a Workflow </label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Ref#</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Contract Name</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Version Number</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Comments</label>
+          </div>
+          <div class="col-lg-4">
+            <textarea name="" id="" cols="38" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Creation Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Expiration Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Send Email to </label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="col-12 tempbtn">
+          <ul>
+            <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+            <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> generate</button></li>
+          </ul>
+        </div>
+      </form>
     </div>
+  </div>
 </div>

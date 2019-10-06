@@ -11,15 +11,20 @@
     font-size: 20px;
     font-weight: 500;
     }
-  .tempform .formdiv{
-    margin-bottom: 24px;
-    padding-left: 3%;
+   .formdivpop{
+    margin-bottom: 20px;
+  }
+  .formdivpop select{
+    padding: .375rem 0;width: 100%;
+  }
+  .formdivpop .formdiv{
+      padding: 0;
   }
   .tempbtn{
     text-align: center;
-    display: block;  
-      /* border-top: 2px solid #ccc;
-    margin-top: 5%;
+    display: block;   
+     /* border-top: 2px solid #ccc; */
+    /* margin-top: 5%;
     padding-top: 4%;
     padding-bottom: 4%; */
   }
@@ -232,13 +237,4 @@
   }
   .tablebottom{
     margin-bottom: 4%;
-  }
-  .formdivpop{
-    margin-bottom: 20px;
-  }
-  .formdivpop select{
-    padding: .375rem 0;width: 100%;
-  }
-  .formdivpop .formdiv{
-      padding: 0;
   }

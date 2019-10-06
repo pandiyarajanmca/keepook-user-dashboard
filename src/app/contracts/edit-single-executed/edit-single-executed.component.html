@@ -1,0 +1,346 @@
+<div class="container">
+        <div class="row temptoplist">
+          <ul class="">
+            <li>
+              <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+            </li>
+            <li>Templates /</li>
+            <li>Edit /</li>
+            <li>Pending /</li>
+            <li>Template View /</li>
+            <li><a href=""> Template ID  </a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-12  temptitle">
+            <h3>Edit Contract</h3>
+            <div class="report-col">
+              <button class="btn btn-save" type="button"><i  class="fa fa-question" ></i> Help</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-3 left_sidebar p-0">
+            <app-contracts-sidebar></app-contracts-sidebar>
+          </div>
+          <!--right_container-->
+          <div class="col-12 col-lg-9 p-0">
+            <form action="" class="tempform toppadding">
+                    <div class="jumbotron jumbotron1">
+                            <div class="row">
+                              <div class="col-6">
+                                <h3>contract detail</h3>
+                              </div>
+                              
+                            </div>
+                          </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="email">Contract Type</label>
+                </div>
+                <div class="col-lg-4">
+                        <input type="text" class="form-control" id="" name="">
+                </div>
+                
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="">Template ID</label>
+                </div>
+                <div class="col-lg-4" style="color:red;">
+      
+                        <input type="text" class="form-control" id="" name="">
+                </div>
+                <div class="col-lg-4">
+                        <ul class="editbtnlist">
+                       
+                          <li>
+                                  <div class="uploadfile1">
+                                          <label> <i  class="fa fa-file"></i> Preview <input type="file" size="60" ></label>
+                                        </div>
+                           
+                          </li>
+                        </ul>
+                      </div>
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="">File Name</label>
+                </div>
+                <div class="col-lg-4">
+                        <input type="text" class="form-control" id="" name="">
+      
+                </div>
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="">Owner</label>
+                </div>
+                <div class="col-lg-4">
+                        <input type="text" class="form-control" id="" name="">
+                </div>
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="email">Workflow Classification </label>
+                </div>
+                <div class="col-lg-4">
+                  <input type="date" class="form-control" id="" name="">
+                </div>
+                <div class="col-lg-4">
+                        <ul class="editbtnlist">
+                          <li style="margin-right: 8px;">
+                            <button data-target="#myModal" data-toggle="modal" type="button" class="btn btn-primary"><i  class="fa fa-eye" ></i> View Flow</button>
+                          </li>
+                        
+                        </ul>
+                      </div>
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="">Step No</label>
+                </div>
+                <div class="col-lg-4">
+                        <input type="date" class="form-control" id="" name="">
+                </div>
+              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="">Supervisior</label>
+                </div>
+                <div class="col-lg-4">
+                        <select name="" style="width:100%;">
+                                <option  value="" >All</option>
+                                <option  value="" >10</option>
+                              </select>
+                </div>
+              </div>
+
+
+              <div class="jumbotron jumbotron1 jumbotronbrd">
+                    <div class="row">
+                      <div class="col-6">
+                        <h3>counterparty detail</h3>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              
+                  <div class="row formdiv">
+                        <div class="col-lg-4">
+                          <label for="">Company Name</label>
+                        </div>
+                        <div class="col-lg-4">
+                                <input type="text" class="form-control" id="" name="">
+                        </div>
+                      </div>
+                      <div class="row formdiv">
+                            <div class="col-lg-4">
+                              <label for="">Email</label>
+                            </div>
+                            <div class="col-lg-4">
+                                    <input type="email" class="form-control" id="" name="">
+                            </div>
+                          </div>
+                          <div class="row formdiv">
+                                <div class="col-lg-4">
+                                  <label for="">Phone</label>
+                                </div>
+                                <div class="col-lg-4">
+                                        <input type="number" class="form-control" id="" name="">
+                                </div>
+                              </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="email">Authorized Signatory</label>
+                </div>
+                <div class="col-lg-4">
+                        <input type="text" class="form-control" id="" name="">
+                </div>
+                <div class="col-lg-4">
+                        <ul class="editbtnlist">
+                          <li style="margin-right: 8px;">
+                            <div class="uploadfile1">
+                              <label> <i  class="fa fa-file"></i> Choose File <input type="file" size="60" ></label>
+                            </div>
+                          </li>
+                          <li>
+                                  <div class="uploadfile1">
+                                          <label> <i  class="fa fa-file-search"></i> Preview <input type="file" size="60" ></label>
+                                        </div>
+                            <!-- <div class="preview">
+                              <button type="button" class="btn btn-light"><i  class="fa fa-search" ></i>Preview</button>
+                            </div> -->
+                          </li>
+                        </ul>
+                      </div>
+              </div>
+      
+              
+              <div class="jumbotron jumbotron1 jumbotronbrd">
+                    <div class="row">
+                      <div class="col-6">
+                        <h3>contract lifecycle</h3>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="row formdiv">
+                        <div class="col-lg-4">
+                          <label for="">date of creation</label>
+                        </div>
+                        <div class="col-lg-4">
+                                <input type="date" class="form-control" id="" name="">
+                        </div>
+                      </div>
+                      <div class="row formdiv">
+                            <div class="col-lg-4">
+                              <label for="">Renewal</label>
+                            </div>
+                            <div class="col-lg-4">
+                                    <select name="" style="width:100%;">
+                                            <option  value="" >All</option>
+                                            <option  value="" >10</option>
+                                          </select>
+                            </div>
+                          </div>
+                      <div class="row formdiv">
+                            <div class="col-lg-4">
+                              <label for="">Notice for Renewal</label>
+                            </div>
+                            <div class="col-lg-4">
+                                    <select name="" style="width:100%;">
+                                            <option  value="" >All</option>
+                                            <option  value="" >10</option>
+                                          </select>
+                            </div>
+                          </div>
+                      <div class="row formdiv">
+                            <div class="col-lg-4">
+                              <label for="">Set  Renewal Reminder</label>
+                            </div>
+                            <div class="col-lg-4">
+                                    <select name="" style="width:100%;">
+                                            <option  value="" >All</option>
+                                            <option  value="" >10</option>
+                                          </select>
+                            </div>
+                          </div>
+                      <div class="row formdiv">
+                            <div class="col-lg-4">
+                              <label for="">Advance Notice to Cancel Renewal</label>
+                            </div>
+                            <div class="col-lg-4">
+                                    <select name="" style="width:100%;">
+                                            <option  value="" >All</option>
+                                            <option  value="" >10</option>
+                                          </select>
+                            </div>
+                          </div>
+              <div class="row formdiv">
+                <div class="col-lg-4">
+                  <label for="email">Comments</label>
+                </div>
+                <div class="col-lg-4">
+                  <textarea name="" id="" cols="38" rows="5" placeholder="No comments"></textarea>
+                </div>
+              </div>
+              
+                  
+              <div class="col-12 tempbtn tempbtn1">
+                <ul>
+                  <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> close</button></li>
+                  <li> <button type="button" class="btn btn-primary"><i class="fa fa-close"></i> sign and send</button></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header" style="    background: #f8f8f8;">
+                  <h4 class="modal-title" style="font-size:17px;text-transform: uppercase;"> execute contract</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form action="">
+                 
+    
+                    <div class="row formdivpop">
+                            <div class="col-lg-12 formdiv">
+                            <div class="row">
+                              <div class="col-2">
+                                <label for="">Recipent</label>
+                              </div>
+                              <div class="col-4">
+                                      <select name="" style="width:100%;">
+                                              <option  value="" >All</option>
+                                              <option  value="" >10</option>
+                                            </select>
+                              </div>
+                              <div class="col-1">
+                                      (or)
+                              </div>
+                              <div class="col-5">
+                                      <select name="" style="width:100%;">
+                                              <option  value="" >All</option>
+                                              <option  value="" >10</option>
+                                            </select>
+                              </div>
+                            </div>
+                            </div>
+                        
+                            
+                          </div>
+                    <div class="row formdivpop">
+                            <div class="col-lg-12 formdiv">
+                              <div class="col-12" style="padding: 0;">
+                                <label for="">You are about to send a Reminder for xyz (activity, review, sign etc.)
+                                     Please     aneter below the message you would like to send to Recipint</label>
+                              </div>
+                              <div class="col-12" style="padding: 0;">
+                                    <textarea style="width:100%;" name="" id="" cols="38" rows="5" placeholder="Please review Section3"></textarea>
+                              </div>
+                            </div>
+                        
+                            
+                          </div>
+    
+                
+                  </form>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <div class="col-12 tempbtn">
+                    <ul>
+                      <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+                      <li> <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane"></i> send for signature</button></li>
+                    </ul>
+                  </div>
+    
+                  <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+          
+          

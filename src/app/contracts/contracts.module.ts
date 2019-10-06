@@ -8,17 +8,17 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ContractsSidebarComponent } from './contracts-sidebar/contracts-sidebar.component';
 import { AddContractsComponent } from './add-contracts/add-contracts.component';
 import { EditContractsComponent } from './edit-contracts/edit-contracts.component';
-import { EditDraftingComponent } from './edit-contracts/edit-drafting/edit-drafting.component';
-import { EditExecuteComponent } from './edit-contracts/edit-execute/edit-execute.component';
-import { EditPendingExecutionComponent } from './edit-contracts/edit-pending-execution/edit-pending-execution.component';
-import { EditDelegatedComponent } from './edit-contracts/edit-delegated/edit-delegated.component';
-import { EditExecutedTableComponent } from './edit-contracts/edit-executed-table/edit-executed-table.component';
-import { EditPendingExecutionTableComponent } from './edit-contracts/edit-pending-execution-table/edit-pending-execution-table.component';
-import { EditDelegatedTableComponent } from './edit-contracts/edit-delegated-table/edit-delegated-table.component';
+import { EditSingleDelegatedComponent } from './edit-single-delegated/edit-single-delegated.component';
+import { EditSingleDraftingComponent } from './edit-single-drafting/edit-single-drafting.component';
+import { EditSingleExecutedComponent } from './edit-single-executed/edit-single-executed.component';
+import { EditSinglePendingExecutionComponent } from './edit-single-pending-execution/edit-single-pending-execution.component';
+import { UserManageDelegatedComponent } from './user-manage-delegated/user-manage-delegated.component';
+import { UserManageExecutedComponent } from './user-manage-executed/user-manage-executed.component';
+import { UserManagePendingExecutionComponent } from './user-manage-pending-execution/user-manage-pending-execution.component';
 
 
 @NgModule({
-  declarations: [UserAllContractsComponent, LandingPageComponent, ContractsSidebarComponent, AddContractsComponent, EditContractsComponent, EditDraftingComponent, EditExecuteComponent, EditPendingExecutionComponent, EditDelegatedComponent, EditExecutedTableComponent, EditPendingExecutionTableComponent, EditDelegatedTableComponent],
+  declarations: [UserAllContractsComponent, LandingPageComponent, ContractsSidebarComponent, AddContractsComponent, EditContractsComponent, EditSingleDelegatedComponent, EditSingleDraftingComponent, EditSingleExecutedComponent, EditSinglePendingExecutionComponent, UserManageDelegatedComponent, UserManageExecutedComponent, UserManagePendingExecutionComponent],
   imports: [
     CommonModule,
     ContractsRoutingModule,
