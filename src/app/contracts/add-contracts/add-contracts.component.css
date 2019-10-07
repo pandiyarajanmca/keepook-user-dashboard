@@ -17,7 +17,11 @@
 }
 .tempbtn{
     text-align: center;
-    display: block;    border-top: 2px solid #ccc;
+    display: block; 
+     
+}
+.tempbtn1{
+    border-top: 2px solid #ccc;
     margin-top: 5%;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -167,3 +171,18 @@
   .tempform{
       padding-top: 4%;
   }
+
+
+  
+.modal-body{
+    padding: 0;
+    }
+
+    tr {
+        border-bottom: 1px solid #898989 !important;
+    }
+
+    .modal-header{
+        background: #f6f6f6;
+        text-transform: uppercase;
+    }
