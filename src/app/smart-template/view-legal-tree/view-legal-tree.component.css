@@ -457,9 +457,8 @@ display: inline-block;display: table-cell;
 .num{
   background-color: #ededed;
   border-color: #ededed;
-  background-color: #fff;
   border: 1px solid #ededed;
-  color: #ededed;
+  color: #0056b3;
   font-weight: 700;
   width: 40px;
   height: 40px;
@@ -595,3 +594,4 @@ color:#0099cc;
 font-size: 20px;
 
 }
+
