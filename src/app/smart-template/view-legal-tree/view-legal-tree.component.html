@@ -1,0 +1,199 @@
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+     
+      <li><a href="">Smart Templates / </a></li>
+      <li><a href="">Create / </a></li>
+      <li><a href="">Smart Clauses / </a></li>
+      <li>Legal Tree View </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Create Smart Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save" type="button"><i class="fa fa-question"></i> View History</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-smart-sidebar></app-smart-sidebar>
+    </div>
+    <!--right_container-->
+
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-9 p-r-0 tablebottom">
+
+
+      <div class="col-12 tablist table1">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <ul class="">
+              <li class="is-active">
+                <a data-toggle="tab" href="#home">
+                  <p class="num">1</p>
+                  <p class="numtext num1">
+                    Name It
+                  </p>
+                  <!-- <label for="tab">
+                          <span>1</span> <br/>
+
+                            <span>Select a Published Template</span></label> -->
+                </a>
+              </li>
+              <li class="is-active">
+                <a data-toggle="tab" href="#menu1" routerLink="/smart-template/step2" data-toggle="tab">
+                  <p class="num">2</p>
+                  <p class="numtext num2">
+                    Smart Clause
+                  </p>
+                  <!-- <label for="tab">
+                    <span>1</span> <br/>
+
+                      <span>Smart Clause</span></label> -->
+                </a>
+              </li>
+              <li>
+                <a data-toggle="tab" href="#menu2" routerLink="/smart-template/step3" data-toggle="tab">
+                  <p class="num numnew">3</p>
+                  <p class="numtext num3">
+                    Smart Fields
+                  </p>
+                  <!-- <label for="tab">
+                      <span>1</span> <br/>
+
+                        <span>Smart Fields</span></label> -->
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-1 info">
+            <i class="fa fa-info"></i>
+
+          </div>
+          <div class="col-12 col-lg-2 pg">
+
+            <div class="progress">
+              <div class="progress-bar" style="width:30%">33%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-12 smart-title" style="padding: 0;">
+        <h3 style="    color: #000;
+              font-weight: 500;text-transform: uppercase;"> MURABAHA CONTRACT LEGAL TREE
+          <p style="   
+              color: gray;
+              font-size: 13px;margin-top: 3px;  text-transform: capitalize;  ">Click on magnifying glass shows text
+            associated to each of the selected clauses</p>
+
+        </h3>
+
+        <i class="fa fa-edit"></i>
+      </div>
+
+
+      <div class="col-12 treelist">
+        <ul>
+          <li>
+            <button class="btn btn-save" type="button">Home Loan <i class="fa fa-search"></i> </button>
+          </li>
+          <li>
+            <button class="btn btn-save" type="button">Home Loan <i class="fa fa-search"></i> </button>
+          </li>
+          <li>
+            <button class="btn btn-save" type="button">Home Loan <i class="fa fa-search"></i> </button>
+          </li>
+          <li>
+            <button class="btn btn-save" type="button">Home Loan <i class="fa fa-search"></i> </button>
+          </li>
+          <li>
+            <button class="btn btn-save" type="button">Home Loan <i class="fa fa-search"></i> </button>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="row">
+        <h3 class="lefttitletop" style="    color: #000;
+              font-weight: 500;text-transform: uppercase;"> smart document view
+
+        </h3>
+        <div class="col-12 ">
+
+
+          <div class="table-responsive ">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Action</th>
+                  <th>clause </th>
+                  <th>non legal text </th>
+                  <th>legal text</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center"> <i class="fa fa-search"></i> </td>
+                  <td>Liabilities</td>
+                  <td>sample text</td>
+                  <td>sample text</td>
+                </tr>
+                <tr>
+                  <td class="text-center"> <i class="fa fa-search"></i> </td>
+                  <td>Liabilities</td>
+                  <td>sample text</td>
+                  <td>sample text</td>
+                </tr>
+
+
+
+
+              </tbody>
+            </table>
+          </div>
+
+
+          <div class="treebtn">
+            <ul class="">
+              <li class="">
+                <button type="button" class="btn btn-dark"> Reject</button>
+
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary"> Accepet and Sign</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary"> In Person Addt</button>
+
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="col-12 tempbtn">
+          <ul>
+            <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> close</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </div>

@@ -1,0 +1,266 @@
+<div class="container">
+  <div class="row temptoplist">
+    <ul class="">
+      <li>
+        <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+      </li>
+      <li>Contracts /</li>
+      <li><a href="">Create </a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-12  temptitle">
+      <h3>Edit All Template</h3>
+      <div class="report-col">
+        <button class="btn btn-save text-capitalize" type="button"><i class="fa fa-question"></i> Help</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-3 left_sidebar p-0">
+      <app-contracts-sidebar></app-contracts-sidebar>
+    </div>
+    <!--right_container-->
+    <div class="col-12 col-lg-9 p-0">
+      <form action="" class="tempform tempform1">
+
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Source File </label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" name="">
+          </div>
+          <div class="col-lg-4">
+            <ul class="editbtnlist">
+              <li style="margin-right: 8px;">
+                <div class="uploadfile1">
+                  <label> <i class="fa fa-file-text"></i> Choose File <input type="file" size="60"></label>
+                </div>
+              </li>
+              <li>
+                <div class="preview">
+                  <button type="button" class="btn btn-light"><i class="fa fa-search"></i>Preview</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Select Smart Template</label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <br>
+            <input type="text" class="form-control" id="" name="">
+          </div>
+        </div>
+
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Select a Workflow </label>
+          </div>
+          <div class="col-lg-4">
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Ref#</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Contract Name</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Version Number</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Comments</label>
+          </div>
+          <div class="col-lg-4">
+            <textarea name="" id="" cols="38" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Creation Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="email">Expiration Date</label>
+          </div>
+          <div class="col-lg-4">
+            <input type="date" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="row formdiv">
+          <div class="col-lg-4">
+            <label for="">Send Email to </label>
+          </div>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="" placeholder=" " name="">
+          </div>
+        </div>
+        <div class="col-12 tempbtn tempbtn1">
+          <ul>
+            <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+            <li> <button data-toggle="modal" data-target="#myModal"  type="button" class="btn btn-primary"><i class="fa fa-check"></i> generate</button></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="myModal" >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 style="margin-bottom: 0;font-size: 19px;"> user generate contracts
+          </h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="">
+  
+            <div class="table-responsive ">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>select</th>
+                    <th>ref. no.</th>
+                    <th>contracts </th>
+                    <th>smart template</th>
+                    <th>status</th>
+                    <th>actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="radio"></td>
+                    <td>4384</td>
+                    <td><a href="">IST_30_CL_A</a> </td>
+                    <td><a href="">2019_IST_30_ST</a> </td>
+                    <td>Drafting</td>
+                    <td style="text-align: center;">
+                        <i class="fa fa-ellipsis-h open-pop" style="font-size:24px">
+                      <ul class="open-poplist">
+        <li>
+            <i class="fa fa-eye" style="color:skyblue;"></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-pencil" style=""></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-trash" style="color:red;"></i>
+                        </li>
+                        </ul>
+                        </i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio"></td>
+                    <td>4384</td>
+                    <td><a href="">IST_30_CL_A</a> </td>
+                    <td><a href="">2019_IST_30_ST</a> </td>
+                    <td>Drafting</td>
+                    <td style="text-align: center;">
+                        <i class="fa fa-ellipsis-h open-pop" style="font-size:24px">
+                      <ul class="open-poplist">
+        <li>
+            <i class="fa fa-eye" style="color:skyblue;"></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-pencil" style=""></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-trash" style="color:red;"></i>
+                        </li>
+                        </ul>
+                        </i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio"></td>
+                    <td>4384</td>
+                    <td><a href="">IST_30_CL_A</a> </td>
+                    <td><a href="">2019_IST_30_ST</a> </td>
+                    <td>Drafting</td>
+                    <td style="text-align: center;">
+                        <i class="fa fa-ellipsis-h open-pop" style="font-size:24px">
+                      <ul class="open-poplist">
+        <li>
+            <i class="fa fa-eye" style="color:skyblue;"></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-pencil" style=""></i>
+                        </li>
+                        <li>
+                          <i class="fa fa-trash" style="color:red;"></i>
+                        </li>
+                        </ul>
+                        </i>
+                      </td>
+                  </tr>
+                  
+  
+                </tbody>
+              </table>
+            </div>
+  
+  
+          </form>
+  
+  
+  
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer" style="border:0;">
+          <div class="col-12 tempbtn ">
+            <ul>
+              <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> cancel</button></li>
+              <li> <button type="button" class="btn btn-primary"><i class="fa fa-check"></i> select</button></li>
+            </ul>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>

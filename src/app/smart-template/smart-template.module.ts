@@ -8,7 +8,13 @@ import { ViewSmartComponent } from './view-smart/view-smart.component';
 import { EditSmartComponent } from './edit-smart/edit-smart.component';
 
 import { AccessService } from '../_serives/access.service';
-import { AddSmartComponent} from './add-smart/add-smart.component'
+import { AddSmartComponent} from './add-smart/add-smart.component';
+import { EditSingleComponent } from './edit-single/edit-single.component';
+import { ViewLegalTreeComponent } from './view-legal-tree/view-legal-tree.component';
+import { ViewSingleComponent } from './view-single/view-single.component';
+import { CreateStep1Component } from './create-step1/create-step1.component';
+import { CreateStep2Component } from './create-step2/create-step2.component';
+import { CreateStep3Component } from './create-step3/create-step3.component'
 
 
 
@@ -21,7 +27,19 @@ import { AddSmartComponent} from './add-smart/add-smart.component'
     EditSmartComponent,
     ViewSmartComponent,
     
-    AddSmartComponent
+    AddSmartComponent,
+    
+    EditSingleComponent,
+    
+    ViewLegalTreeComponent,
+    
+    ViewSingleComponent,
+    
+    CreateStep1Component,
+    
+    CreateStep2Component,
+    
+    CreateStep3Component
   ],
   imports: [
     CommonModule,

@@ -1,5 +1,5 @@
 <!--inner-container-->
-<div class="row mt-3 create_new_company">
+<div class="row mt-3 create_new_company" style="display:none;">
     <div class="container">
         <!--title-->
         <div class=" row-div">
@@ -112,3 +112,155 @@
     </div>
 </div>
 <!--/inner-container-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" >
+    <div class="row temptoplist">
+      <ul class="">
+        <li>
+          <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+        </li>
+        <li><a href="">Entity Management / </a></li>
+        <li><a href="">Company / </a></li>
+        <li>Add</li>
+        
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-12  temptitle">
+        <h3>New Company Setup</h3>
+  
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="col-12 col-lg-3 left_sidebar p-0">
+        <app-entity-sidebar></app-entity-sidebar>
+      </div> -->
+      <!--right_container-->
+  
+      <div class="col-xs-12 col-sm-9 col-md-6 col-lg-9 col-xl-12 p-r-0 tablebottom">
+        <ul class="toptabel">
+          <li class="toplabel1">
+  
+            <p class="search-icon">Search : <input class="form-control" id="myInput" type="text" placeholder="Type to filter...">
+            </p>
+          </li>
+         
+          <li class="toplabel2">
+  
+            <p>Org Unit : 
+  
+              <select name="">
+                            <option  value="" >Emirates NDB Bank</option>
+                            <option  value="" >10</option>
+                          </select>
+            </p>
+          </li>
+          <li class="toplabel3">
+  
+            <p>Show Per Page :
+  
+              <select name="">
+                            <option  value="" >All</option>
+                            <option  value="" >10</option>
+                          </select>
+            </p>
+          </li>
+        </ul>
+  
+  
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>report name </th>
+                <th>date of creation</th>
+                <th>created by</th>
+                <th>last modified on</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2019_UserbyOrg</td>
+                <td>21.10.2018</td>
+                <td>Jhon Doe</td>
+                <td>21.10.2018</td>
+                <td class="action-list">
+                    
+                    <ul>
+                        <li class="al1">
+                            <a href=""> <i class="fa fa-eye" style="font-size:24px;color:skyblue;"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-pencil" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                        <li class="al3">
+                            <a href=""> <i class="fa fa-download" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                    </ul>
+                   </td>
+              </tr>
+              <tr>
+                <td>2019_UserbyOrg</td>
+                <td>21.10.2018</td>
+                <td>Jhon Doe</td>
+                <td>21.10.2018</td>
+                <td class="action-list">
+                    
+                    <ul>
+                        <li class="al1">
+                            <a href=""> <i class="fa fa-eye" style="font-size:24px;color:skyblue;"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-pencil" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                        <li class="al3">
+                            <a href=""> <i class="fa fa-download" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                    </ul>
+                   </td>
+              </tr>
+              <tr>
+                <td>2019_UserbyOrg</td>
+                <td>21.10.2018</td>
+                <td>Jhon Doe</td>
+                <td>21.10.2018</td>
+                <td class="action-list">
+                    
+                    <ul>
+                        <li class="al1">
+                            <a href=""> <i class="fa fa-eye" style="font-size:24px;color:skyblue;"></i></a>
+                        </li>
+                        <li>
+                            <a href=""> <i class="fa fa-pencil" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                        <li class="al3">
+                            <a href=""> <i class="fa fa-download" style="font-size:24px;color:#333;"></i></a>
+                        </li>
+                    </ul>
+                   </td>
+              </tr>
+            
+  
+            </tbody>
+          </table>
+        </div>
+        <div class="table-pagination float-right">
+                <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination">
+                </ngb-pagination>
+            </div>
+      </div>
+  
+  
+    </div>
+  

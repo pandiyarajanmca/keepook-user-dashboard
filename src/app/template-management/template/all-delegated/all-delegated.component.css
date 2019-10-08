@@ -83,10 +83,7 @@
   .uploadfile1 input[type="file"] {
     display: none;
   }
-  .uploadfile1{
-    /* position: absolute;
-    right: 18%; */
-  }
+  
   .formdiv label{
     font-weight: 500;
   }
@@ -238,3 +235,4 @@
   .tablebottom{
     margin-bottom: 4%;
   }
+

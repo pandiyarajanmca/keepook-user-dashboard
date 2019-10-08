@@ -4,3 +4,101 @@ header{
 .text-danger {
     color: #ff0a22!important;
 } 
+
+
+.login-bg{
+    background: url('/assets/images/login-bg.jpg');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* left: 0;
+    right: 0; */
+}
+.left-login{
+    background: rgba(52, 31, 127, 0.61);   
+     /* position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto; */
+}
+.right-login{
+    background: #1784afe0;   
+     /* position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto; */
+}
+.left-login-list  {
+    text-align: center;
+    position: relative;
+    left: 27%;
+    margin: auto;
+    margin-top: 19%;
+}
+.rightlist{
+    position: relative;
+    left: 26%;
+    margin-top: 19%;
+}
+.left-login-list  li{
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 18px;
+}
+.left-login-list  li i{
+    margin-right: 14px;
+}
+.list1{
+    font-size: 19px;
+    margin-bottom:26px !important;
+    
+}
+.list2{
+    margin-top: 6%;
+    font-size: 15px;
+
+}
+
+.loginbtn{
+    border-radius: 30px;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #612684;
+    outline: none;
+    box-shadow: none;
+    margin-top: 3%;
+
+}
+.loginbtn i{
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    float: left;
+    margin-right: 9px;color: #612684;
+}
+.login-logo img{
+    max-width: 32%;
+}
+.logininput{
+    border: none;
+}
+.form-group{
+    width: 50%;
+    
+}
+.loginform{
+    margin-top: 4%;
+}
+.logininput1{
+    margin-top: 6%;
+}
+.logininput2{
+    margin-top:3%;
+}

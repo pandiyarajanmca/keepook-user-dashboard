@@ -19,12 +19,12 @@ const routes: Routes = [
     loadChildren: '../app/smart-template/smart-template.module#SmartTemplateModule'
   },
   {
-    path: 'technical-settings',
-    loadChildren: '../app/technical-settings/technical-settings.module#TechnicalSettingsModule'
+    path: 'tasks',
+    loadChildren: '../app/tasks/tasks.module#TasksModule'
   },
   {
-    path: 'workflow-management',
-    loadChildren: '../app/workflow-management/workflow-management.module#WorkflowManagementModule'
+    path: 'contracts',
+    loadChildren: '../app/contracts/contracts.module#ContractsModule'
   },
   {
     path: 'reporting',
