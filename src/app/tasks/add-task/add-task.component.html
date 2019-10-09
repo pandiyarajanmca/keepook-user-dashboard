@@ -1,0 +1,182 @@
+<div class="container">
+    <div class="row temptoplist">
+      <ul class="">
+        <li>
+          <button (click)='goBack()' type="button" class="btn btn-light"><i class="fa fa-mail-reply"></i> Back</button>
+        </li>
+        <li><a href="">Contracts /</a></li>
+        <li><a href="">Create /</a></li>
+        <li>Task Id </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-12  temptitle">
+        <h3>All Tasks</h3>
+        <div class="report-col">
+          <button class="btn btn-save" type="button"><i  class="fa fa-question" ></i> Help</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-3 left_sidebar p-0">
+        <app-task-sidbar></app-task-sidbar>
+      </div>
+      <!--right_container-->
+      <div class="col-12 col-lg-9 p-0">
+        <form action="" class="tempform toppadding">
+            <div class="jumbotron">
+                <div class="row">
+                  <div class="col-6">
+                    <h3 class="text-uppercase">Create A New Task</h3>
+                  </div>
+                  
+                </div>
+              </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Task ID</label>
+            </div>
+            <div class="col-lg-4">
+              <input type="text" class="form-control" id=""  name="">
+            </div>
+        
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Assign Priority</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>High</option>
+                          <option>Low</option>
+                          <option>Medium</option>
+                        </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Document Type</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>1</option>
+                          <option>1</option>
+                        </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Document ID</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>1</option>
+                          <option>1</option>
+                        </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="">Due Date</label>
+            </div>
+            <div class="col-lg-4">
+              <input type="date" class="form-control" id="" placeholder=" " name="">
+            </div>
+          </div>
+
+
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="">Delay Start</label>
+            </div>
+            <div class="col-lg-4">
+              <input type="text" class="form-control" id="" placeholder=" " name="">
+            </div>
+          </div>
+
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Task Reminder</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>1</option>
+                          <option>1</option>
+                        </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Assign to Department</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>1</option>
+                          <option>1</option>
+                        </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="email">Assign to Individual</label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                          <option>1</option>
+                          <option>1</option>
+                          <option>1</option>
+                        </select>
+            </div>
+          </div>
+
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="">Instructions</label>
+            </div>
+            <div class="col-lg-4">
+              <textarea name="" id="" cols="38" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="">Task Requirements </label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+            </div>
+          </div>
+          <div class="row formdiv">
+            <div class="col-lg-4">
+              <label for="">Task Rights </label>
+            </div>
+            <div class="col-lg-4">
+              <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+            </div>
+          </div>
+        
+
+          <div class="col-12 tempbtn">
+            <ul>
+              <li> <button type="button" class="btn btn-secondary"><i class="fa fa-close"></i> close</button></li>
+              <li> <button type="button" class="btn btn-primary"><i class="fa fa-trash"></i> delete</button></li>
+              <li> <button type="button" class="btn btn-primary"><i class="fa fa-paper-plane"></i> update</button></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
