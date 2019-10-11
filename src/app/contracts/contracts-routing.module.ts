@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'edit-sigle-executed', component: EditSingleExecutedComponent },
   { path: 'edit-sigle-drafting', component: EditSingleDraftingComponent },
   { path: 'edit-sigle-pending-execution', component: EditSinglePendingExecutionComponent },
-  { path: 'user-manage-delegated', component: UserManageDelegatedComponent },
+  {path: 'user-manage-delegated', component: UserManageDelegatedComponent },
   { path: 'user-manage-executed', component: UserManageExecutedComponent },
   { path: 'user-manage-pending-execution', component: UserManagePendingExecutionComponent },
 
