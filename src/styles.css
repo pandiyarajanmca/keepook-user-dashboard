@@ -1538,6 +1538,10 @@ table.table .status.active {
 
 .left-men-u ul li a i {
   margin-right: 10px;
+  background: #612683;
+  border-radius: 100%;
+  color: #fff;
+  padding: 3px;
 }
 
 .dash-box {
@@ -2139,6 +2143,9 @@ input:checked + .slider:before {
 
 
 /* ---------------------------------------------- new */
+.toptabel li p select{
+  width:30% !important;
+}
 
 @media(min-width:992px) and (max-width:1199px){ 
   .tempbtn ul li{
