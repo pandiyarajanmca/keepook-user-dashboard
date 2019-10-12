@@ -102,3 +102,47 @@ header{
 .logininput2{
     margin-top:3%;
 }
+
+
+@media(min-width:992px) and (max-width:1199px){
+    .left-login-list{
+        left: 20%;
+    }
+  
+}
+@media(min-width:768px) and (max-width:991px){
+    .left-login-list{
+        left: 5%;
+    }
+    .form-group{
+        width: 70%;
+    }
+    .rightlist{
+        left: 10%;
+    }
+}
+
+@media(max-width:767px){
+    .login-bg{
+        position: relative;
+    }
+    .left-login-list{
+        left: 0;    margin-top: 6%;
+    }
+    .rightlist {
+        left: 1%;
+        margin-top: 4%;
+    }
+    .form-group {
+        width: 90%;
+    }
+    .loginbtn{
+        margin-top: 2%;
+    }
+    .loginform{
+        margin-bottom: 13%;
+    }
+    .login-logo img {
+        max-width: 35%;
+    }
+}
