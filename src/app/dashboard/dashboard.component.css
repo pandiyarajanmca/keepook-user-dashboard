@@ -9,8 +9,8 @@
 }
 .toplist li{
     display: inline-block;
-    margin: 9px 8px;
-    padding-left: 0;font-size:13px;
+    margin: 9px 6px;
+    padding-left: 0;font-size:12px;
 }
 .task-item h4{
     border-left: 1px solid #468bb7;

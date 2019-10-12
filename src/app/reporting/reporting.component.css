@@ -221,11 +221,11 @@ table.table td img{
     margin-right: 5px;
   }
   .toptabel li p select{
-    width:80%;
+    width:79%;
     float: right;
   }
   .toplabel3 select{
-    width: 39% !important;
+    width: 36% !important;
   }
   .toplabel1{width:30% !important;
   }
@@ -280,4 +280,23 @@ table.table td img{
     
     position: relative;
     right: -20px;    
+  }
+
+  @media(min-width:992px) and (max-width:1199px){
+    .toptabel li p input
+    {
+      width: 76%;
+    }
+    .toptabel li p select{
+      width: 72%;
+    }
+    .toplabel3{
+      margin-left: 4%;    width: 21% !important;
+    }
+    .toplabel3 select{
+      width: 32% !important;
+    }
+    .toplabel3 select{
+      margin-left: 7%;
+    }
   }

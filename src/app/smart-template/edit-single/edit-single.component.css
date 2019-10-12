@@ -461,3 +461,16 @@ color:#0099cc;
 font-size: 20px;
 
 }
+
+
+@media(min-width:768px) and (max-width:991px){
+.smart-title p{
+  padding-right: 25px;
+}
+}
+@media(max-width:767px){
+  .smart-title i{
+    position: relative;
+    top: -7px;
+  }
+}

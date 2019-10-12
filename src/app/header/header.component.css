@@ -163,7 +163,7 @@ background: none !important;
         margin-left:0px;    width: 68px;
     }
     .list-row ul li a{
-        padding: 21px 33px;
+        padding: 21px 27px;
     }
 }
 @media(min-width:768px) and (max-width:991px){
@@ -196,7 +196,7 @@ background: none !important;
         top: 10px;
     }
     .list-row ul li a{
-        padding: 21px 13px;
+        padding: 21px 8px;
     }
 }
 
