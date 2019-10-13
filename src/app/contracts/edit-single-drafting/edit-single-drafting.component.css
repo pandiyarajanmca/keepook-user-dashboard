@@ -175,3 +175,13 @@
     .formdivpop .formdiv{
         /* padding: 0; */
     }
+    @media(min-width:992px) and (max-width:1199px){
+      .rel{
+        margin-top: 5px;
+      }
+    }
+    @media(max-width:767px){
+      .rel{
+        margin-top: 5px;
+      }
+    }

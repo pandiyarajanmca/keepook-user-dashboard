@@ -139,3 +139,14 @@
     float: left;
     margin-right: 9px;color:#fff;
 }
+
+
+@media (max-width:767px) {
+    .uploadfile1 label{
+        margin-top: 8px;
+    }
+    textarea{
+        width: 100%;
+    }
+    
+}

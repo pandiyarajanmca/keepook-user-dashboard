@@ -463,3 +463,12 @@ font-size: 20px;
 .report-col button{
   text-transform: capitalize;
 } 
+
+
+
+@media(max-width:767px){
+  .smart-title i{
+    position: relative;
+    top: -7px;
+  }
+}

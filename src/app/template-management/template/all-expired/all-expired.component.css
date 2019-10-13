@@ -238,3 +238,52 @@
   .tablebottom{
     margin-bottom: 4%;
   }
+
+
+  
+
+@media(min-width:992px) and (max-width:1199px){
+  .toplabel1 {
+    width: 42% !important;
+    margin-top: 8px;
+  }
+  .toplabel2{
+    width:26% !important;
+  }
+  .toplabel3 {
+      width:25% !important;
+      margin-top: 7px;
+  }
+  .toptabel li p input{
+    width: 80%;
+  }
+} 
+@media(min-width:768px) and (max-width:991px){
+  .toplabel1 {
+    width: 61% !important;
+    margin-top: 8px;
+  }
+  .toplabel2{
+    width:36% !important;
+  }
+  .toplabel3 {
+      width:36% !important;
+      margin-top: 7px;
+  }
+} 
+@media(max-width:767px){
+  .toplabel1 {
+    width: 95% !important;
+    margin-top: 8px;
+  }
+  .toplabel2{
+    width: 60% !important;
+  }
+  .toplabel3 {
+      width: 58% !important;
+      margin-top: 7px;
+  }
+  .toptabel li p input{
+    width: 79%;
+  }
+}

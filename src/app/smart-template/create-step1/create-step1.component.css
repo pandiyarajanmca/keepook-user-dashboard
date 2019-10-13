@@ -560,3 +560,35 @@ color: #fff;
 .nav-tabs {
 border-bottom:none;
 }
+
+
+@media (min-width:992px) and (max-width:1199px){
+  .numtext{
+    width:125px;
+  }
+  .progress{
+    width: 235px;
+  }
+  textarea{
+    width: 100%;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+  .numtext{
+    width:158px;
+  }
+}
+@media(max-width:767px){
+  .numtext{
+    width:90px;
+  }
+  .num{
+    left: 30px;
+  }
+  .progress{
+    width: 215px;
+  }
+  textarea{
+    width: 100%;
+  }
+}

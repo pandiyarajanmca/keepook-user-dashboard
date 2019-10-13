@@ -595,3 +595,46 @@ font-size: 20px;
 
 }
 
+
+@media(min-width:992px) and (max-width:1199px){
+  .progress{
+    width: 243px;
+  }
+  .num{
+    left: 29px;
+  }
+  .numtext{
+    width:140px;
+  }
+}
+@media(min-width:768px) and (max-width:991px){
+  .progress{
+    width: 243px;
+  }
+  .num{
+    left: 29px;
+  }
+  .numtext{
+    width:144px;
+  }
+  .treebtn button{
+    margin-bottom: 6px;
+  }
+  .smart-title p{
+    padding-right: 50px !important;
+  }
+}
+@media(max-width:767px){
+  .num{
+    left: 29px;
+  }
+  .numtext{
+    width:98px;
+  }
+  .progress{
+    width: 243px;
+  }
+  .treebtn button{
+    margin-bottom: 6px;
+  }
+}

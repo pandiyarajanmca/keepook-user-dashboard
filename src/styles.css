@@ -21,8 +21,8 @@ p {
 }
 
 .container {
-  max-width: 1600px;
-  width: 96%;
+  /* max-width: 1600px;
+  width: 96%; */
 }
 
 h1,
@@ -1538,6 +1538,10 @@ table.table .status.active {
 
 .left-men-u ul li a i {
   margin-right: 10px;
+  background: #612683;
+  border-radius: 100%;
+  color: #fff;
+  padding: 3px;
 }
 
 .dash-box {
@@ -2130,4 +2134,142 @@ input:checked + .slider:before {
       font-size: 19px;
       padding: 6px 0;
   
+    }
+
+
+    .lefticon{
+      
+    }
+
+
+/* ---------------------------------------------- new */
+.toptabel li p select{
+  width:30% !important;
+}
+
+@media(min-width:992px) and (max-width:1199px){ 
+  .tempbtn ul li{
+    margin-bottom: 4px !important;
+ 
+  }
+  .open-poplist{
+    width:20% !important;
+  }   
+  .preview button{
+    top:0 !important;
+  } .leftcontent{
+    margin-bottom: 20px !important;
+  }
+  textarea{
+    width:100%;
+}
+}
+
+    @media(min-width:768px) and (max-width:991px){ 
+      .preview button{
+        top:0 !important;
+      }
+      .tempbtn ul li{
+        margin-bottom: 4px !important;
+       
+      }.tempbtn{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }.tempbtn ul li button i{
+        margin-right: 02px !important;
+        }
+        .open-poplist{
+          width:21% !important;
+        }
+        .toptabel li p input{
+          width:72%;
+        }
+        .formdivpop .formdiv
+        {
+          margin-bottom: 13px;
+        }
+        .formdivpop {
+          margin-bottom: 0 !important;
+      }
+      .temptoplist ul li{
+        margin-bottom: 6px;
+      }
+      .editbtnlist li{
+        margin-bottom: 6px !important;
+      }.leftcontent{
+        margin-bottom: 20px !important;
+      }
+      textarea{
+        width:100%;
+    }
+    }
+    @media(max-width:767px){
+      .formdivpop .formdiv
+      {
+        margin-bottom: 13px;
+      }
+      .formdivpop {
+        margin-bottom: 0 !important;
+    }
+.jumbotron h3{
+    margin-bottom: 0;
+    padding-left: 0%;
+    font-size: 15px !important;
+}
+.tempbtn ul li button{
+  padding: 9px 5px !important;
+  font-size: 12px !important;
+}
+.tempbtn ul li button i {
+  font-size: 15px !important;
+} 
+.tempbtn ul li button i{
+margin-right: 0 !important;
+}
+.tempbtn{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.tempbtn ul li{
+  margin-bottom: 4px !important;
+}
+.temptoplist{
+  padding: 8px 0 !important;
+}
+.toptabel li{
+  display: block !important;
+}
+.toplabel1 {
+  width: 95% !important;
+  margin-top: 8px;
+}
+.toplabel2{
+  width: 60% !important;
+}
+.toplabel3 {
+    width: 58% !important;
+    margin-top: 7px;
+}
+.open-poplist{
+  width:35% !important;
+}
+.temptoplist ul li{
+  margin-bottom: 6px;
+}
+.editbtnlist{
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.report-col {
+  position: relative !important;
+  right: 10px !important;
+  top: -8px !important;
+  float: right !important;
+}
+.leftcontent{
+  margin-bottom: 20px !important;
+}
+textarea{
+  width:100%;
+}
     }

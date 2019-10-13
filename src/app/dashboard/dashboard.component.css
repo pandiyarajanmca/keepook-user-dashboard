@@ -9,8 +9,8 @@
 }
 .toplist li{
     display: inline-block;
-    margin: 9px 8px;
-    padding-left: 0;font-size:13px;
+    margin: 9px 6px;
+    padding-left: 0;font-size:12px;
 }
 .task-item h4{
     border-left: 1px solid #468bb7;
@@ -55,3 +55,65 @@ background: #79a341;
         .task-item h4{
             font-size: 18px;
         }
+
+
+
+
+
+
+
+        
+
+@media(min-width:992px) and (max-width:1199px){
+    .task-body{
+        padding: 15px 11px;
+    }
+    .recent-favorite a{
+        padding: 10px 15px;
+    }
+    .toplist li{
+        margin: 9px 4px;
+        padding-left: 0;
+        font-size: 12px;
+    }
+    .task-col{
+        padding: 0 8px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .user-bx figure{
+        width: 155px;
+        height: 155px;
+    }
+    .user-bx img {
+        max-width: 90px;
+    }
+    .morereport-btn{
+        padding: 10px 4px;  
+    }
+}
+
+@media(max-width:767px){
+    .user-bx figure{
+        width: 155px;
+        height: 155px;
+    }
+    .user-bx img {
+        max-width: 90px;
+    }
+    .user-feature-row{
+        padding: 10px 0;
+    }
+    .barchart-row {
+        padding: 25px 0;
+    }
+
+    .toplist li{
+        margin: 9px 3px;
+        padding-left: 0;
+        font-size: 12px;
+    }
+    .seemore-link{
+        margin-top: 7px;
+    }
+}
