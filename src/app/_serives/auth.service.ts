@@ -49,11 +49,11 @@ export class AuthService {
 
     console.log(this.isAuthenticated);
 
-    // if(this.isAuthenticated())
-    // {
+    if(this.isAuthenticated())
+    {
 
     this.loggedIn.next(true);
-    // }
+    }
 
     return this.loggedIn.asObservable();
   }

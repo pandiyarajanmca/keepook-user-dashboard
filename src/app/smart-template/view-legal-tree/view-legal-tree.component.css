@@ -1,78 +1,75 @@
 .search-box-container input {
   padding: 5px 20px 5px 5px;
- 
 }
 
 .search-box-container:after {
-    content: "\f002";
-    font-family: FontAwesome;
-    /* margin-left: -25px;
+  content: "\f002";
+  font-family: FontAwesome;
+  /* margin-left: -25px;
     margin-right: 25px; */
 }
-table.table thead th{
-    font-size: 15px;
+table.table thead th {
+  font-size: 15px;
 }
 .search-box-container:after {
   content: "\f002";
   font-family: FontAwesome;
-position: absolute;
-right: -40px;
-top: 7px;
+  position: absolute;
+  right: -40px;
+  top: 7px;
 }
 
-
-
-.modal-body{
+.modal-body {
   padding-bottom: 6%;
 }
-.modal-body label{
+.modal-body label {
   text-align: left;
   float: left;
 }
-.modal-body .col{
- margin-bottom: 19px;
+.modal-body .col {
+  margin-bottom: 19px;
 }
-.modal-footer{
+.modal-footer {
   border-top: 1px solid #b8b8b8;
 }
-.tfooter_btn_col{
-  border-top:none;
+.tfooter_btn_col {
+  border-top: none;
 }
 
-.modal-header{
-  background: #f6f6f6;text-transform: uppercase;
+.modal-header {
+  background: #f6f6f6;
+  text-transform: uppercase;
 }
-
-
 
 /* ------------------------------------------------------- new ---------------------- */
 
-.title{
+.title {
   background: #0099cc;
   padding: 10px;
 }
-h3{
+h3 {
   font-size: 20px;
   margin: 0;
   font-weight: 500;
   color: #fff;
 }
-tr{
+tr {
   border-bottom: 1px solid #898989 !important;
 }
-tbody{
+tbody {
   border-left: 1px solid #898989;
 }
-th{
+th {
   text-transform: uppercase;
-}[data-toggle="collapse"] .fa:before {  
+}
+[data-toggle="collapse"] .fa:before {
   content: "\f139";
 }
 
 [data-toggle="collapse"].collapsed .fa:before {
   content: "\f13a";
 }
-.leftbtn{
+.leftbtn {
   width: 100%;
   background: #612683;
   border-radius: 0;
@@ -81,28 +78,30 @@ th{
   font-size: 15px;
   font-weight: 500;
   outline: none !important;
-}  
-.leftbtnlist img{
-  width: 18px;margin-right: 10px;
 }
-.leftbtnlist li a{
-  color: #495057;    font-size: 14px;
+.leftbtnlist img {
+  width: 18px;
+  margin-right: 10px;
+}
+.leftbtnlist li a {
+  color: #495057;
+  font-size: 14px;
   padding: 11px 6px;
 }
-.toptabel{
-  border: 1px solid #898989 ;
-  margin-bottom: 0 ;
+.toptabel {
+  border: 1px solid #898989;
+  margin-bottom: 0;
   padding: 1% 1%;
 }
-.toptabel li{
+.toptabel li {
   display: inline-block;
 }
-.toptabel li p input{
+.toptabel li p input {
   width: 74%;
   float: right;
   position: relative;
 }
-.toptabel li p input::after{
+.toptabel li p input::after {
   content: "\f002";
   font-family: FontAwesome;
   position: absolute;
@@ -110,68 +109,66 @@ th{
   top: 7px;
   margin-right: 5px;
 }
-.toptabel li p select{
-  width:35%;
+.toptabel li p select {
+  width: 35%;
   float: right;
 }
-.toplabel1{width: 35% !important;
+.toplabel1 {
+  width: 35% !important;
 }
-.toplabel2{width: 35% !important;
-  margin-left: 
-  2%;
+.toplabel2 {
+  width: 35% !important;
+  margin-left: 2%;
 }
-.toplabel3{width: 20% !important;
+.toplabel3 {
+  width: 20% !important;
 }
-.search-icon{
+.search-icon {
   position: relative;
 }
 .search-icon:after {
   content: "\f002";
   font-family: FontAwesome;
   position: absolute;
-  left:93%;
+  left: 93%;
   top: 7px;
 }
 
-
-
-
-
 /* ------------------------------ new --------------------------- */
 
-
 /* ----------------------------------- new ---------------------- */
-.temptitle{
-  
-  background: #0099cc;    
+.temptitle {
+  background: #0099cc;
 }
-.temptitle h3{
+.temptitle h3 {
   color: #fff;
-  margin: 0;    padding: 18px 10px;
+  margin: 0;
+  padding: 18px 10px;
   position: relative;
   font-size: 20px;
   font-weight: 500;
-  }
-.tempform .formdiv{
+}
+.tempform .formdiv {
   margin-bottom: 24px;
   padding-left: 3%;
 }
-.tempbtn{
+.tempbtn {
   text-align: center;
-  display: block;    border-top: 2px solid #ccc;
+  display: block;
+  border-top: 2px solid #ccc;
   margin-top: 5%;
   padding-top: 4%;
   padding-bottom: 4%;
 }
 
-.tempbtn ul{
+.tempbtn ul {
   padding: 0;
 }
-.tempbtn ul li{
+.tempbtn ul li {
   display: inline-block;
   margin: 0 5px;
 }
-.tempbtn ul li button{
+.tempbtn ul li button {
   border-radius: 30px;
   padding: 9px 12px;
   text-transform: uppercase;
@@ -179,20 +176,22 @@ th{
   font-weight: 500;
   font-size: 15px;
 }
-.tempbtn ul li button i{
+.tempbtn ul li button i {
   margin-right: 5px;
 }
 
-.jumbotron{
-  background-color:#f8f9fa;
+.jumbotron {
+  background-color: #f8f9fa;
   padding: 3% 5%;
   padding-left: 0;
   /* margin-top:-4% */
 }
-.jumbotron h3{
-  margin-bottom: 0; padding-left: 7%;font-size: 18px;
+.jumbotron h3 {
+  margin-bottom: 0;
+  padding-left: 7%;
+  font-size: 18px;
 }
-.uploadfile label{
+.uploadfile label {
   padding: 10px;
   background: #f6f6f6;
   display: table;
@@ -201,12 +200,12 @@ th{
   border-radius: 6px;
   margin-bottom: 0;
   position: absolute;
-  top: -8px
+  top: -8px;
 }
 .uploadfile input[type="file"] {
   display: none;
 }
-.uploadfile1 label{
+.uploadfile1 label {
   padding: 10px;
   background: #f6f6f6;
   display: table;
@@ -218,92 +217,95 @@ th{
 .uploadfile1 input[type="file"] {
   display: none;
 }
-.uploadfile1{
+.uploadfile1 {
   /* position: absolute;
   right: 18%; */
 }
-.formdiv label{
+.formdiv label {
   font-weight: 500;
 }
-.temptitle{
+.temptitle {
   background: #0099cc;
 }
-.temptitle h3{
+.temptitle h3 {
   font-size: 20px;
   margin: 0;
   font-weight: 500;
   color: #fff;
 }
-.temptoplist ul{
+.temptoplist ul {
   padding: 0;
   margin: 3% 0;
 }
-.temptoplist li{
+.temptoplist li {
   display: inline-block;
 }
-.temptoplist ul li  {
+.temptoplist ul li {
   display: inline-block;
   /* line-height: 42px; */
   font-size: 16px;
   font-weight: 500;
   margin: 0 6px;
-  border-radius:30px;   
+  border-radius: 30px;
   color: #09c;
-
 }
-.temptoplist ul li a{
-  color: #000;  
+.temptoplist ul li a {
+  color: #000;
 }
-.temptoplist ul li button{
+.temptoplist ul li button {
   border: 1px solid #666;
   border-radius: 30px;
   padding: 8px 20px;
 }
-.p-0{
+.p-0 {
   padding-left: 0;
   padding-right: 0;
 }
-.p-l-0{
+.p-l-0 {
   padding-left: 0;
 }
 
-.report-col{
-  position: absolute;right:10px;top:10px;
+.report-col {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-.report-col button{
-  background: #fff;    border-radius: 30px;
+.report-col button {
+  background: #fff;
+  border-radius: 30px;
   padding: 9px 20px;
   text-transform: uppercase;
   color: #0099cc;
 }
-.report-col button i{
+.report-col button i {
   background: #0099cc;
   border-radius: 50%;
   padding: 4px;
   float: left;
-  margin-right: 9px;color:#fff;
+  margin-right: 9px;
+  color: #fff;
 }
 
 /* -------------------- tabel----------- */
 
-tr{
+tr {
   border-bottom: 1px solid #898989 !important;
 }
-tbody{
+tbody {
   border-left: 1px solid #898989;
 }
-th{
+th {
   text-transform: uppercase;
   font-size: 14px !important;
 }
-[data-toggle="collapse"] .fa:before {  
+[data-toggle="collapse"] .fa:before {
   content: "\f139";
 }
 
 [data-toggle="collapse"].collapsed .fa:before {
   content: "\f13a";
 }
-.leftbtn{
+.leftbtn {
   width: 100%;
   background: #612683;
   border-radius: 0;
@@ -312,28 +314,31 @@ th{
   font-size: 15px;
   font-weight: 500;
   outline: none !important;
-}  
-.leftbtnlist img{
-  width: 18px;margin-right: 10px;
 }
-.leftbtnlist li a{
-  color: #495057;    font-size: 14px;
+.leftbtnlist img {
+  width: 18px;
+  margin-right: 10px;
+}
+.leftbtnlist li a {
+  color: #495057;
+  font-size: 14px;
   padding: 11px 6px;
 }
-.toptabel{
-  border: 1px solid #898989 ;
-  margin-bottom: 0 ;
-  padding: 1% 1%;    margin-top: 4%;
+.toptabel {
+  border: 1px solid #898989;
+  margin-bottom: 0;
+  padding: 1% 1%;
+  margin-top: 4%;
 }
-.toptabel li{
+.toptabel li {
   display: inline-block;
 }
-.toptabel li p input{
+.toptabel li p input {
   width: 83%;
   float: right;
   position: relative;
 }
-.toptabel li p input::after{
+.toptabel li p input::after {
   content: "\f002";
   font-family: FontAwesome;
   position: absolute;
@@ -341,91 +346,93 @@ th{
   top: 7px;
   margin-right: 5px;
 }
-.toptabel li p select{
-  width:35%;
+.toptabel li p select {
+  width: 35%;
   float: right;
 }
-.toplabel1{width: 42% !important;
+.toplabel1 {
+  width: 42% !important;
 }
-.toplabel2{width: 35% !important;
-  margin-left:  2%;position: relative;
+.toplabel2 {
+  width: 35% !important;
+  margin-left: 2%;
+  position: relative;
   top: 5px;
 }
-.toplabel3{width: 20% !important;
+.toplabel3 {
+  width: 20% !important;
 }
-.toplabel3 p{
+.toplabel3 p {
   position: relative;
   top: 10px;
 }
-.search-icon{
+.search-icon {
   position: relative;
 }
 .search-icon:after {
   content: "\f002";
   font-family: FontAwesome;
   position: absolute;
-  left:93%;
+  left: 93%;
   top: 7px;
 }
-.p-r-0{
+.p-r-0 {
   padding-right: 0;
 }
-.tablebottom{
+.tablebottom {
   margin-bottom: 4%;
 }
 
-
-.report-col{
-  position: absolute;right:10px;top:10px;
+.report-col {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-.report-col button{
-  background: #fff;    border-radius: 30px;
+.report-col button {
+  background: #fff;
+  border-radius: 30px;
   padding: 9px 20px;
   text-transform: uppercase;
   color: #0099cc;
 }
-.report-col button i{
+.report-col button i {
   background: #0099cc;
   border-radius: 50%;
   padding: 4px;
   float: left;
-  margin-right: 9px;color:#fff;
+  margin-right: 9px;
+  color: #fff;
 }
 
-
-.smart-title h3{
-font-size: 18px;
-position: relative;
-padding-top: 4%;
-padding-bottom: 2%;
+.smart-title h3 {
+  font-size: 18px;
+  position: relative;
+  padding-top: 4%;
+  padding-bottom: 2%;
 }
-.smart-title i{
-    float: right;
-    background: #0099cc;
-    border-radius: 50%;
-    padding: 9px;
-    color: #fff;
-position: absolute;top:38%; 
-right: 11px; 
+.smart-title i {
+  float: right;
+  background: #0099cc;
+  border-radius: 50%;
+  padding: 9px;
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  right: 11px;
 }
 
-.table1{
+.table1 {
   border-bottom: 2px solid #ccc;
-  padding-bottom: 1%;    padding-top: 4%;
+  padding-bottom: 1%;
+  padding-top: 4%;
 }
 
-
-
-
-.tablist {
-
-}
 .tablist ul {
-text-align: left;
-position: relative;
+  text-align: left;
+  position: relative;
 }
-.tablist ul::after{
-  content: '';
+.tablist ul::after {
+  content: "";
   height: 1px;
   width: 64%;
   background-color: rgb(97, 38, 132);
@@ -435,26 +442,12 @@ position: relative;
   right: 0;
   margin: auto;
   z-index: -1;
-  /* right: 0;
-  margin: auto; */
 }
-.tablist ul li{
-display: inline-block;display: table-cell;
-
-  /* display: block;
-  margin: 0 auto 4px;
-  background-color: rgb(97, 38, 132);
-  width: 36px;
-  height: 36px;
-  line-height: 32px;
-  text-align: center;
-  font-weight: bold;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(97, 38, 132);
-  border-radius: 50%; */
+.tablist ul li {
+  display: inline-block;
+  display: table-cell;
 }
-.num{
+.num {
   background-color: #ededed;
   border-color: #ededed;
   border: 1px solid #ededed;
@@ -469,25 +462,25 @@ display: inline-block;display: table-cell;
   left: 60px;
   position: relative;
 }
-.numtext{
+.numtext {
   width: 167px;
   position: relative;
   color: #000;
   margin-top: 6px;
   text-align: center;
 }
-.num1{
+.num1 {
   position: relative;
 }
 
-.leftttile{
+.leftttile {
   background-color: rgb(97, 38, 132);
   text-align: center;
   padding: 5px;
   color: #ffffff;
 }
 
-.lefttitletop{
+.lefttitletop {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -496,22 +489,22 @@ display: inline-block;display: table-cell;
   margin-left: 15px;
   margin-top: 30px;
 }
-.rightform{
+.rightform {
   padding: 20px;
   border: 1px solid rgb(116, 112, 112);
   border-radius: 1px;
   padding-top: 20px;
 }
-.leftcontent{
+.leftcontent {
   padding: 20px;
   border: 1px solid rgb(116, 112, 112);
   border-radius: 1px;
   padding-top: 20px;
 }
 
-.progress{
+.progress {
   overflow: hidden;
-  font-size: .75rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   height: 30px;
   width: 300px;
@@ -525,116 +518,114 @@ display: inline-block;display: table-cell;
   margin: 2px 3px;
   border-radius: 17px;
 }
-.info i{
-color: #fff;
-width: 35px;
-height: 35px;
-text-align: center;
-line-height: 35px;
-font-size: 22px;    background: #0099cc;
-border-radius: 50%;
+.info i {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 22px;
+  background: #0099cc;
+  border-radius: 50%;
 }
-.info{
-padding-right: 0;
+.info {
+  padding-right: 0;
 }
-.pg{
-padding-left: 0;
+.pg {
+  padding-left: 0;
 }
 
 .treebtn {
-margin-top: 2%;
+  margin-top: 2%;
 }
-.treebtn ul{
-margin-bottom: 0;
+.treebtn ul {
+  margin-bottom: 0;
 }
 .treebtn ul li {
   display: inline-block;
-  margin-right:17px;
+  margin-right: 17px;
 }
 
-
-.treelist{
-
+.treelist {
 }
-.treelist ul{
-position: relative;
+.treelist ul {
+  position: relative;
 }
-.treelist ul::before{
-position: absolute;
-content:'';
-left: 0;width: 1px;
-height: 100%;
-top: 0;
-bottom: 0;
-margin: auto;
-background: #333;
+.treelist ul::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #333;
 }
-.treelist ul li{
-position: relative;
+.treelist ul li {
+  position: relative;
 }
-.treelist ul li::before{
-position: absolute;
-content:'';
-left: 0;width: 10px;
-height: 1px;
-top: 0;
-bottom: 0;
-margin: auto;
-background: #333;
-}
-
-
-.treelist ul li button{
-outline: none;
-box-shadow: none;
-}
-.treelist ul li  button i{
-margin-left:6px;
-color:#0099cc;
-font-size: 20px;
-
+.treelist ul li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 10px;
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #333;
 }
 
+.treelist ul li button {
+  outline: none;
+  box-shadow: none;
+}
+.treelist ul li button i {
+  margin-left: 6px;
+  color: #0099cc;
+  font-size: 20px;
+}
 
-@media(min-width:992px) and (max-width:1199px){
-  .progress{
+@media (min-width: 992px) and (max-width: 1199px) {
+  .progress {
     width: 243px;
   }
-  .num{
+  .num {
     left: 29px;
   }
-  .numtext{
-    width:140px;
+  .numtext {
+    width: 140px;
   }
 }
-@media(min-width:768px) and (max-width:991px){
-  .progress{
+@media (min-width: 768px) and (max-width: 991px) {
+  .progress {
     width: 243px;
   }
-  .num{
+  .num {
     left: 29px;
   }
-  .numtext{
-    width:144px;
+  .numtext {
+    width: 144px;
   }
-  .treebtn button{
+  .treebtn button {
     margin-bottom: 6px;
   }
-  .smart-title p{
+  .smart-title p {
     padding-right: 50px !important;
   }
 }
-@media(max-width:767px){
-  .num{
+@media (max-width: 767px) {
+  .num {
     left: 29px;
   }
-  .numtext{
-    width:98px;
+  .numtext {
+    width: 98px;
   }
-  .progress{
+  .progress {
     width: 243px;
   }
-  .treebtn button{
+  .treebtn button {
     margin-bottom: 6px;
   }
 }

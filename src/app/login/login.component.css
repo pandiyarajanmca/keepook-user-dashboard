@@ -1,148 +1,130 @@
-header{
-    display: none!important;
+header {
+  display: none !important;
 }
 .text-danger {
-    color: #ff0a22!important;
-} 
+  color: #ff0a22 !important;
+}
 
+.login-bg {
+  background: url("/assets/images/login-bg.jpg");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  left: 0;
+}
+.left-login {
+  background: rgba(52, 31, 127, 0.61);
+}
+.right-login {
+  background: #1784afe0;
+}
+.left-login-list {
+  text-align: center;
+  position: relative;
+  left: 27%;
+  margin: auto;
+  margin-top: 19%;
+}
+.rightlist {
+  position: relative;
+  left: 26%;
+  margin-top: 19%;
+}
+.left-login-list li {
+  color: #fff;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.left-login-list li i {
+  margin-right: 14px;
+}
+.list1 {
+  font-size: 19px;
+  margin-bottom: 26px !important;
+}
+.list2 {
+  margin-top: 6%;
+  font-size: 15px;
+}
 
-.login-bg{
-    background: url('/assets/images/login-bg.jpg');
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    /* left: 0;
-    right: 0; */
+.loginbtn {
+  border-radius: 30px;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #612684;
+  outline: none;
+  box-shadow: none;
+  margin-top: 3%;
 }
-.left-login{
-    background: rgba(52, 31, 127, 0.61);   
-     /* position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto; */
+.loginbtn i {
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  float: left;
+  margin-right: 9px;
+  color: #612684;
 }
-.right-login{
-    background: #1784afe0;   
-     /* position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto; */
+.login-logo img {
+  max-width: 32%;
 }
-.left-login-list  {
-    text-align: center;
+.logininput {
+  border: none;
+}
+.form-group {
+  width: 50%;
+}
+.loginform {
+  margin-top: 4%;
+}
+.logininput1 {
+  margin-top: 6%;
+}
+.logininput2 {
+  margin-top: 3%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .left-login-list {
+    left: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .left-login-list {
+    left: 5%;
+  }
+  .form-group {
+    width: 70%;
+  }
+  .rightlist {
+    left: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-bg {
     position: relative;
-    left: 27%;
-    margin: auto;
-    margin-top: 19%;
-}
-.rightlist{
-    position: relative;
-    left: 26%;
-    margin-top: 19%;
-}
-.left-login-list  li{
-    color: #fff;
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 18px;
-}
-.left-login-list  li i{
-    margin-right: 14px;
-}
-.list1{
-    font-size: 19px;
-    margin-bottom:26px !important;
-    
-}
-.list2{
+  }
+  .left-login-list {
+    left: 0;
     margin-top: 6%;
-    font-size: 15px;
-
-}
-
-.loginbtn{
-    border-radius: 30px;
-    padding: 9px 20px;
-    text-transform: uppercase;
-    color: #fff;
-    background: #612684;
-    outline: none;
-    box-shadow: none;
-    margin-top: 3%;
-
-}
-.loginbtn i{
-    background: #fff;
-    border-radius: 50%;
-    padding: 4px;
-    float: left;
-    margin-right: 9px;color: #612684;
-}
-.login-logo img{
-    max-width: 32%;
-}
-.logininput{
-    border: none;
-}
-.form-group{
-    width: 50%;
-    
-}
-.loginform{
+  }
+  .rightlist {
+    left: 1%;
     margin-top: 4%;
-}
-.logininput1{
-    margin-top: 6%;
-}
-.logininput2{
-    margin-top:3%;
-}
-
-
-@media(min-width:992px) and (max-width:1199px){
-    .left-login-list{
-        left: 20%;
-    }
-  
-}
-@media(min-width:768px) and (max-width:991px){
-    .left-login-list{
-        left: 5%;
-    }
-    .form-group{
-        width: 70%;
-    }
-    .rightlist{
-        left: 10%;
-    }
-}
-
-@media(max-width:767px){
-    .login-bg{
-        position: relative;
-    }
-    .left-login-list{
-        left: 0;    margin-top: 6%;
-    }
-    .rightlist {
-        left: 1%;
-        margin-top: 4%;
-    }
-    .form-group {
-        width: 90%;
-    }
-    .loginbtn{
-        margin-top: 2%;
-    }
-    .loginform{
-        margin-bottom: 13%;
-    }
-    .login-logo img {
-        max-width: 35%;
-    }
+  }
+  .form-group {
+    width: 90%;
+  }
+  .loginbtn {
+    margin-top: 2%;
+  }
+  .loginform {
+    margin-bottom: 13%;
+  }
+  .login-logo img {
+    max-width: 35%;
+  }
 }

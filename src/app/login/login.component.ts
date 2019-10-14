@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
 		  }, 2000);
 	}
 	login(data) {
+		console.log(data)
 		this.submit = true;
 		this.spinnerLoad.spinnerShow();
 		this.authService.login(data)
